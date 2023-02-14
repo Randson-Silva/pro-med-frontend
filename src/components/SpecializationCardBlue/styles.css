@@ -1,0 +1,114 @@
+.specialization-card-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+    height: 150px;
+    background-color: rgba(235, 235, 235, 1);
+    border-color: black;
+    box-shadow: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.blue-specialization-arrow-left {
+    position: absolute;
+    left: 15px;
+}
+
+.blue-specialization-arrow-left img {
+    position: relative;
+    width: 12px;
+}
+
+.blue-specialization-arrow-right {
+    position: absolute;
+    right: 15px;
+}
+
+.blue-specialization-arrow-right img {
+    position: relative;
+    width: 12px;
+}
+
+.blue-specialization-icon img {
+    width: 90px;
+    height: 80px;
+}
+
+.blue-specialization-container {
+    height: 110px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-specialization-container h3 {
+    color: rgba(76, 169, 255, 0.8);
+    font-weight: 700;
+}
+
+.blue-specialization-container p {
+    color: rgba(76, 169, 255, 0.7);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+@media (min-width: 576px) {
+
+    .blue-specialization-arrow-left {
+        left: 30px;
+    }
+
+    .blue-specialization-arrow-right {
+        right: 30px;
+    }
+
+    .blue-specialization-card {
+        height: 180px;
+    }
+
+    .blue-specialization-container p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .specialization-card-blue {
+        width: 180px;
+        height: 200px;
+        border-radius: 10px;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .blue-specialization-container p{
+        font-size: 10px;
+        width: 150px;   
+    }
+
+    .blue-specialization-icon img{
+        width: 70px;
+        height: 60px;
+    }
+
+    .blue-specialization-arrow-right img {
+        display: none;
+    }
+
+    .blue-specialization-arrow-left img {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blue-specialization-card{
+        width: 200px;
+        height: 240px;
+    }
+}

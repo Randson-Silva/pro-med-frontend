@@ -1,0 +1,314 @@
+import { Button, Box, Image } from "@chakra-ui/react";
+import React, { useState } from "react";
+import MenuIcon from "../../assets/img/static/menuIcon.png"
+import PurpleComponentMobile from "../../assets/img/static/purpleComponentMobile.png"
+import PurpleComponentDesktop from "../../assets/img/static/purpleComponentDesktop.png"
+import MedicalComponentMobile from "../../assets/img/static/medicalComponentMobile.png"
+import MedicalComponentDesktop from "../../assets/img/static/MedicalComponentDesktop.png"
+import Logo from "../../assets/img/static/logo.png"
+import SpecializationCardPurple from "../../components/SpecializationCardPurple/SpacializationCardPurple"
+import SpecializationCardBlue from "../../components/SpecializationCardBlue/SpecializationCardBlue"
+import HeartIcon from "../../assets/img/static/heartIcon.png"
+import BrainIcon from "../../assets/img/static/brainIcon.png"
+import BoneIcon from "../../assets/img/static/boneIcon.png"
+import ToothIcon from "../../assets/img/static/toothIcon.png"
+import ClinicIcon from "../../assets/img/static/clinicIcon.png"
+import Share from "../../assets/img/static/share.png"
+import FeedbackImage from "../../assets/img/static/influencerImg.png"
+import Footer from "../../components/Footer/Footer"
+import ChairIcon from "../../assets/img/static/chairIcon.png"
+import MascIcon from "../../assets/img/static/mascIcon.png"
+import BandAidIcon from "../../assets/img/static/bandAidIcon.png"
+import NurseIcon from "../../assets/img/static/nurseIcon.png"
+import "./styles.css"
+
+function Home() {
+
+    return (
+
+        <>
+            <div className="home-page">
+                <nav>
+                    <div className="home-logo-container">
+                        <img src={Logo} alt="" />
+                    </div>
+
+                    <div className="home-login-container">
+                        <Button
+                            width={{ sm: "115px", md: "120px" }}
+                            height="38px"
+                            borderRadius="36px"
+                            background="rgba(205, 206, 243, 1)"
+                            color="rgba(158, 99, 255, 1)"
+                            borderColor="rgba(95, 0, 189, 0.94)
+                            rgba(77, 0, 154, 0)"
+                            border="1px"
+                            cursor="pointer"
+                        >
+                            LOGIN
+                        </Button>
+
+                        <img src={MenuIcon} alt="" />
+                    </div>
+
+                    <div className="home-login-container-desktop">
+                        <p>Home</p>
+                        <p>Médicos</p>
+                        <p>Serviços</p>
+
+                        <Button
+                            width={{ sm: "115px", md: "120px" }}
+                            height="38px"
+                            borderRadius="36px"
+                            background="rgba(205, 206, 243, 1)"
+                            color="rgba(158, 99, 255, 1)"
+                            borderColor="rgba(95, 0, 189, 0.94)
+                            rgba(77, 0, 154, 0)"
+                            border="1px"
+                            cursor="pointer"
+                        >
+                            LOGIN
+                        </Button>
+                    </div>
+                </nav >
+
+                <div className="home-components-container">
+                    <Box
+                        boxSize='250px'
+                        background="rgba(173, 230, 255, 1)"
+                        filter='auto'
+                        blur={{ sm: "120px", lg: "80px" }}
+                        position="absolute"
+                        zIndex={-1}
+                        width={{ sm: "200px", lg: "450px" }}
+                        height={{ sm: "200px", lg: "400px" }}
+                        top="-20px"
+                        right={{ sm: "50px", lg: "200px", xl: "240px" }}
+                        borderRadius="500px"
+                    />
+
+                    <div className="home-purple-component-mobile">
+                        <img src={PurpleComponentMobile} alt="" />
+                    </div>
+
+                    <div className="home-purple-component-desktop">
+                        <img src={PurpleComponentDesktop} alt="" />
+                    </div>
+
+                    <div className="home-frase-container">
+                        <p>Nós acreditamos na</p>
+                        <h1>PREVENÇÃO</h1>
+                        <span>você também?</span>
+                    </div>
+
+                    <div className="home-medical-component-mobile">
+                        <img src={MedicalComponentMobile} alt="" />
+                    </div>
+
+                    <div className="home-medical-component-desktop">
+                        <img src={MedicalComponentDesktop} alt="" />
+                    </div>
+
+
+                    <Box
+                        boxSize='250px'
+                        background="rgba(173, 230, 255, 1)"
+                        filter='auto'
+                        blur='80px'
+                        position="relative"
+                        zIndex={-1}
+                        width={{ sm: "165px", md: "300px", lg: "400px" }}
+                        height={{ sm: "400px", md: "500px" }}
+                        bottom={{ sm: "-300px", md: "-570px", lg: "700px" }}
+                        transform=" rotate(44.29deg)"
+                        borderRadius="500px"
+                    />
+
+
+                    <Box
+                        boxSize='250px'
+                        background="rgba(194, 157, 255, 0.6)"
+                        filter='auto'
+                        blur={{ sm: "50px", lg: "80px" }}
+                        position="relative"
+                        zIndex={-2}
+                        width={{ sm: "250px", md: "300px", lg: "300px" }}
+                        height={{ sm: "400px", md: "470px", lg: "1000px" }}
+                        bottom={{ sm: "-170px", md: "-650px", lg: "1260px" }}
+                        left={{ sm: "300px", lg: "640px", xl: "1000px" }}
+                        transform={{ sm: "rotate(44.29deg)", lg: "rotate(-135.79deg)" }}
+                        borderRadius={{ sm: "0", lg: "100px" }}
+                    />
+
+                    <Box
+                        boxSize='250px'
+                        background="rgba(255, 240, 210, 1)"
+                        filter='auto'
+                        blur='70px'
+                        position="relative"
+                        zIndex={-1}
+                        width={{ sm: "170px", md: "300px", lg: "500px" }}
+                        height={{ sm: "400px", md: "500px" }}
+                        bottom={{ sm: "-170px", md: "-400px", lg: "1250px" }}
+                        borderRadius={{ sm: "500px", lg: "200px" }}
+                    />
+
+                    <Box
+                        boxSize='250px'
+                        background="rgba(203, 220, 244, 1)"
+                        filter='auto'
+                        blur="90px"
+                        position="relative"
+                        zIndex={-1}
+                        width={{ sm: "250px", md: "300px", lg: "500px" }}
+                        height={{ sm: "300px", md: "470px" }}
+                        bottom={{ sm: "320px", md: "-150px", lg: "1700px", xl: "1550px" }}
+                        left={{ sm: "200px", md: "300px", lg: "600px", xl: "1000px" }}
+                        transform=" rotate(70.29deg)"
+                        borderRadius={{ sm: "50%", lg: "50" }}
+                    />
+
+                </div>
+
+                <div className="home-schedule-button">
+
+                    <button>
+                        AGENDE SUA CONSULTA
+                    </button>
+
+
+                </div>
+
+                <div className="home-text-container">
+                    <h2>
+                        Algumas de nossas funcinalidades
+                    </h2>
+
+                </div>
+
+
+                <div className="home-specialization-card">
+
+                    <SpecializationCardPurple
+                    title="Cardiologia"
+                    text="É a especialidade médica que se dedica ao estudo e tratamento do coração e dos vasos sanguíneos."
+                    src={HeartIcon}
+                    />
+                </div>
+
+                <div className="home-specialization-card-desktop">
+                    <SpecializationCardPurple
+                        title="Cardiologia"
+                        text="É a especialidade médica que se dedica ao estudo e tratamento do coração e dos vasos sanguíneos."
+                        src={HeartIcon}
+                    />
+                    <SpecializationCardBlue
+                        title="Neorologia"
+                        text="Neurologia
+                        Especialidade médica que se dedica ao estudo e tratamento do sistema nervoso, incluindo o cérebro, medula espinhal e nervos periféricos."
+                        src={BrainIcon}
+                    />
+                    <SpecializationCardPurple
+                        title="Ortopedia"
+                        text="Especialidade médica que se dedica ao tratamento de lesões e doenças dos ossos, músculos e articulações."
+                        src={BoneIcon}
+                    />
+                    <SpecializationCardBlue
+                        title="Odonotologia"
+                        text="Especialidade médica que se dedica ao estudo, diagnóstico, prevenção e tratamento de doenças e problemas dentais."
+                        src={ToothIcon}
+                    />
+                    <SpecializationCardPurple
+                        title="Clínica Geral"
+                        text="Especialidade médica que fornece atenção básica e primária à saúde."
+                        src={ClinicIcon}
+                    />
+                </div>
+
+
+                <div className="home-share">
+                    <img src={Share} alt="" />
+                </div>
+
+                <div className="home-information-card">
+                    <div className="home-information-card-container">
+
+                        <Image src={ChairIcon}
+                            width="100px"
+                            position="absolute"
+                            right={{ sm: "-5px", lg: "450px", xl: "550px" }}
+                            zIndex="1"
+                            top={{ sm: "-45px", lg: "-20px", xl: "4" }}
+                        />
+
+                        <Image src={MascIcon}
+                            width="100px"
+                            position="absolute"
+                            left={{ sm: "0", lg: "-460px" }}
+                            top={{ sm: "80px", lg: "230px" }}
+                            zIndex="1"
+                        />
+
+                        <div className="home-information-card-img"> </div>
+                        <div className="home-information-card-img-desktop"></div>
+
+                        <p>A ProMed é uma clínica médica criada por um jovem médico, filho de uma família com uma tradição na medicina. Com o objetivo de oferecer atendimento médico de alta qualidade e personalizado, ele reuniu uma equipe de médicos especialistas. A clínica rapidamente se estabeleceu como uma das melhores na região, oferecendo soluções personalizadas para cada paciente. A ProMed é uma extensão da tradição familiar de cuidar da saúde das pessoas.</p>
+
+                        <span>A ProMed nasceu de uma paixão e dedicação de gerações. A família por trás da clínica sempre teve uma tradição de cuidar da saúde e bem-estar das pessoas. Desde a avó que era parteira até o pai que era médico clínico geral, a dedicação à medicina corria nas veias da família.
+                            <br />
+                            <br />
+                            Mas foi somente quando o jovem médico, filho da tradição familiar, decidiu abrir sua própria clínica que a ProMed foi fundada. Com um sonho de oferecer um atendimento médico de alta qualidade e personalizado para cada paciente, ele reuniu uma equipe de médicos dedicados e especialistas em diversas áreas da medicina.
+                            <br />
+                            <br />
+
+                            E assim, a ProMed foi criada, com o objetivo de continuar a tradição familiar de cuidar da saúde das pessoas. Com um toque pessoal e uma equipe de médicos altamente capacitados, a clínica rapidamente se estabeleceu como uma das melhores na região, oferecendo atendimento de qualidade e soluções personalizadas para cada paciente.
+                            <br />
+                            <br />
+                            A ProMed é mais do que uma clínica médica, é uma extensão da tradição familiar de cuidar da saúde e bem-estar das pessoas.</span>
+                    </div>
+                </div>
+                <div className="home-feedback">
+
+                    <h3>Feedback dos nossos pacientes</h3>
+
+                    <div className="home-feedback-container">
+
+                        <h4>Ana Clara B. Moniz</h4>
+
+                        <Image src={BandAidIcon}
+                            width={{ sm: "70px", md: "80px", lg: "100px" }}
+                            position="absolute"
+                            bottom={{ sm: "135px", md: "170px" }}
+                            right={{ sm: "-5px", lg: "110px", xl: "200px" }}
+                            zIndex="2"
+                        />
+
+                        <Image src={NurseIcon}
+                            width={{ sm: "70px", md: "80px", lg: "90px" }}
+                            position="absolute"
+                            bottom="-50px"
+                            left={{ sm: "-20px", lg: "135px", xl: "240px" }}
+                            zIndex="2"
+                        />
+
+                        <div className="home-feedback-card">
+                            <p>
+                                “Frequentei a clínica ProMed e posso dizer que foi uma experiência incrível. Desde o atendimento na recepção até o atendimento médico, tudo foi perfeito. A médica que me atendeu, foi muito profissional e atenciosa. Ela me deu todas as informações que eu precisava e me fez sentir em segurança durante todo o processo. A clínica possui equipamentos modernos e tecnologia avançada, o que tornou meu tratamento ainda mais eficaz.”
+                            </p>
+
+                            <img src={FeedbackImage} alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="home-footer">
+                    <Footer />
+                </div>
+            </div>
+
+        </>
+    );
+}
+
+export default Home;
