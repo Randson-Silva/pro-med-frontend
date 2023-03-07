@@ -5,6 +5,7 @@ import ChairIcon from "../../assets/img/static/chairIcon.png"
 import MascIcon from "../../assets/img/static/mascIcon.png"
 import React from "react";
 import "./styles.css"
+import TextField from "../../components/TextFIeld/TextField";
 
 function Login() {
     const [show, setShow] = React.useState(false)
@@ -141,30 +142,10 @@ function Login() {
                         <Flex
                             flexDirection="column"
                         >
-                            <FormLabel
-                                margin="0"
-                                color="#9E63FF"
-                                fontSize={{ sm: "14px", lg: "15px" }}
-                                fontWeight="500"
-                                lineHeight="25px"
-
-
-                            >
-                                Email ou CPF
-                            </FormLabel>
-                            <Input
-                                placeholder='Email ou CPF'
-                                _placeholder={{ color: "rgba(158, 99, 255, 0.5)", fontSize: "12px, 15px" }}
-                                fontSize={{ sm: "12px", lg: "15px" }}
-                                height={{ sm: "42px", lg: "50px" }}
-                                color="#9E63FF"
-                                background="rgba(230, 214, 255, 1)"
-                                border="rgba(123, 47, 198, 1) 2px solid"
-                                borderRadius="12px"
-                                _focusVisible={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
-                                _hover={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
-
-
+                            <TextField
+                            placeholder="Email ou CPF"
+                            type="text"
+                            label="Login"
                             />
                         </Flex>
 
@@ -175,29 +156,10 @@ function Login() {
 
                             <Flex flexDirection="column">
 
-                                <FormLabel
-                                    margin="0"
-                                    color="#9E63FF"
-                                    fontSize={{ sm: "14px", lg: "15px" }}
-                                    fontWeight="500"
-                                    lineHeight="25px"
-                                >
-                                    Senha
-                                </FormLabel>
-                                <Input
-                                    pr='4.5rem'
+                                <TextField
+                                    placeholder="Senha"
+                                    label="Senha"
                                     type={show ? 'text' : 'password'}
-                                    placeholder='Email ou CPF'
-                                    _placeholder={{ color: "rgba(158, 99, 255, 0.5)", fontSize: "12px, 15px" }}
-                                    fontSize={{ sm: "12px", lg: "15px" }}
-                                    height={{ sm: "42px", lg: "50px" }}
-                                    color="#9E63FF"
-                                    background="rgba(230, 214, 255, 1)"
-                                    border="rgba(123, 47, 198, 1) 2px solid"
-                                    borderRadius="12px"
-                                    _focusVisible={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
-                                    _hover={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
-
                                 />
                             </Flex>
 
@@ -208,16 +170,13 @@ function Login() {
                                     background="transparent"
                                     border="none"
                                     top={{ sm: "26px", lg: "28px" }}
-                                    left="5px"
+                                    left="8px"
                                     onClick={handleClick}
-
                                     _hover={{ border: "none", background: "transparent" }}
                                 >
                                     {show ? <Icon as={ViewOffIcon} color="rgba(123, 47, 198, 1)" /> : <Icon as={ViewIcon} color="rgba(123, 47, 198, 1)" />}
                                 </Button>
                             </InputRightElement>
-
-
                         </InputGroup>
                         <Flex
                             align="center"
