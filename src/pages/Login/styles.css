@@ -6,7 +6,7 @@
     overflow: hidden;
     position: relative;
     padding-top: 50px;
-    background-color:rgba(235, 235, 235, 1);
+    background-color: rgba(235, 235, 235, 1);
 }
 
 .login-card {
@@ -80,11 +80,11 @@
         transform: translate(240px, -50px);
     }
 
-    .login-card h1{
+    .login-card h1 {
         font-size: 40px;
     }
 
-    .login-card p{
+    .login-card p {
         font-size: 14px;
     }
 
@@ -103,8 +103,8 @@
     }
 }
 
-@media(min-width: 1200px){
-    .login-card{
+@media(min-width: 1200px) {
+    .login-card {
         transform: translate(200px, -70px);
     }
 }

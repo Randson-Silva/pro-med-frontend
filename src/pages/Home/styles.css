@@ -347,10 +347,6 @@ nav {
 
 @media(min-width: 992px) {
 
-    .home-logo-container img {
-        width: 180px;
-    }
-
     .home-login-container {
         display: none;
     }
@@ -482,20 +478,30 @@ nav {
         height: 27px;
     }
 
+    .home-feedback-includes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .home-feedback-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 60%;
+        position: relative;
     }
 
     .home-feedback-card {
-        width: 60%;
         z-index: 1;
     }
 
     .home-feedback-container h4 {
-        transform: translateX(-180px);
+        position: absolute;
+        top: -25px;
+        left: 25px;
     }
 
     .home-feedback-card img {
@@ -545,7 +551,7 @@ nav {
     }
 
     .home-feedback-container h4 {
-        transform: translateX(-320px);
+        align-self: center;
     }
 
 

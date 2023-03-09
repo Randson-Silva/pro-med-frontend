@@ -278,36 +278,37 @@ function Home() {
                 <div className="home-feedback">
 
                     <h3>Feedback dos nossos pacientes</h3>
+                    <div className="home-feedback-includes">
+                        <div className="home-feedback-container">
 
-                    <div className="home-feedback-container">
+                            <h4>Ana Clara B. Moniz</h4>
 
-                        <h4>Ana Clara B. Moniz</h4>
+                            <Image src={BandAidIcon}
+                                width={{ sm: "70px", md: "80px", lg: "100px" }}
+                                position="absolute"
+                                bottom={{ sm: "135px", md: "170px" }}
+                                right={{ sm: "-5px", lg: "-50px" }}
+                                zIndex="2"
+                            />
 
-                        <Image src={BandAidIcon}
-                            width={{ sm: "70px", md: "80px", lg: "100px" }}
-                            position="absolute"
-                            bottom={{ sm: "135px", md: "170px" }}
-                            right={{ sm: "-5px", lg: "110px", xl: "200px" }}
-                            zIndex="2"
-                        />
+                            <Image src={NurseIcon}
+                                width={{ sm: "70px", md: "80px", lg: "90px" }}
+                                position="absolute"
+                                bottom="-50px"
+                                left={{ sm: "-20px", lg: "-20px" }}
+                                zIndex="2"
+                            />
 
-                        <Image src={NurseIcon}
-                            width={{ sm: "70px", md: "80px", lg: "90px" }}
-                            position="absolute"
-                            bottom="-50px"
-                            left={{ sm: "-20px", lg: "135px", xl: "240px" }}
-                            zIndex="2"
-                        />
+                            <div className="home-feedback-card">
+                                <p>
+                                    “Frequentei a clínica ProMed e posso dizer que foi uma experiência incrível. Desde o atendimento na recepção até o atendimento médico, tudo foi perfeito. A médica que me atendeu, foi muito profissional e atenciosa. Ela me deu todas as informações que eu precisava e me fez sentir em segurança durante todo o processo. A clínica possui equipamentos modernos e tecnologia avançada, o que tornou meu tratamento ainda mais eficaz.”
+                                </p>
 
-                        <div className="home-feedback-card">
-                            <p>
-                                “Frequentei a clínica ProMed e posso dizer que foi uma experiência incrível. Desde o atendimento na recepção até o atendimento médico, tudo foi perfeito. A médica que me atendeu, foi muito profissional e atenciosa. Ela me deu todas as informações que eu precisava e me fez sentir em segurança durante todo o processo. A clínica possui equipamentos modernos e tecnologia avançada, o que tornou meu tratamento ainda mais eficaz.”
-                            </p>
-
-                            <img src={FeedbackImage} alt="" />
+                                <img src={FeedbackImage} alt="" />
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
                 <div className="home-footer">

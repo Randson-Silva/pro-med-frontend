@@ -1,0 +1,495 @@
+.home-client-page {
+    overflow: hidden;
+    background-color: rgba(235, 235, 235, 1);
+    position: relative;
+}
+
+.home-client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-client-logo img {
+    height: 32px;
+    width: 125px;
+}
+
+.home-client-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-client-menu img {
+    width: 40px;
+    height: 25px;
+}
+
+.home-client-menu-desktop {
+    display: none;
+}
+
+.home-client-historic {
+    display: flex;
+    flex-direction: column;
+    transform: translate(20px, 30px);
+    height: 200px;
+}
+
+.home-client-historic-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.home-client-img-desktop {
+    display: none;
+}
+
+.home-client-historic h1 {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.home-client-historic p {
+    color: rgba(158, 99, 255, 1);
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.home-client-historic span {
+    color: rgba(158, 99, 255, 1);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.home-client-img-mobile img {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 250px;
+    height: 400px;
+}
+
+.home-client-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-client-card-scheduling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #FFFF;
+    z-index: 1;
+    height: 190px;
+    width: 75%;
+    border-radius: 0 100px 100px 0;
+    padding: 0px 40px;
+}
+
+.client-card-scheduling-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 13px;
+}
+
+.home-client-card-scheduling h4 {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.home-client-card-scheduling p {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: justify;
+    line-height: 12px;
+}
+
+.home-client-card-scheduling img {
+    width: 95px;
+}
+
+.home-client-card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background: rgba(158, 99, 255, 1);
+    z-index: 3;
+    height: 170px;
+    width: 100%;
+    border-radius: 100px 0 0 100px;
+    margin-left: 45px;
+    padding-left: 20px;
+    padding-right: 70px;
+    line-height: 15px;
+}
+
+.client-card-profile-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.home-client-card-profile h4 {
+    color: #FFFF;
+    font-weight: 500;
+}
+
+.home-client-card-profile p {
+    color: #FFFF;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: justify;
+    line-height: 12px;
+}
+
+.home-client-card-profile img {
+    width: 100px;
+}
+
+.home-client-card-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    background-color: #FFFF;
+    z-index: 3;
+    height: 150px;
+    width: 70%;
+    border-radius: 0 100px 100px 0;
+    padding: 0 40px;
+}
+
+.client-card-payment-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px 0;
+}
+
+.home-client-card-payment h4 {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 500;
+}
+
+.home-client-card-payment p {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: justify;
+    line-height: 12px;
+}
+
+.home-client-card-payment img {
+    width: 90px;
+}
+
+.home-client-card-plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(158, 99, 255, 1);
+    z-index: 3;
+    height: 175px;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 100px 0 0 100px;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.client-card-plans-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.home-client-card-plans h4 {
+    color: #FFFF;
+    font-weight: 500;
+}
+
+.home-client-card-plans p {
+    color: #FFFF;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: justify;
+}
+
+.home-client-card-plans img {
+    width: 90px;
+}
+
+@media (min-width: 576px) {
+    .home-client-historic {
+        transform: translate(20px, 30px);
+    }
+
+    .home-client-historic h1 {
+        font-size: 40px;
+    }
+
+    .home-client-historic p {
+        font-size: 14px;
+    }
+
+    .home-client-historic span {
+        font-size: 14px;
+    }
+
+    .home-client-card-scheduling h4 {
+        font-size: 17px;
+    }
+
+    .home-client-card-scheduling p {
+        font-size: 13px;
+    }
+
+    .home-client-card-profile h4 {
+        font-size: 17px;
+    }
+
+    .home-client-card-profile p {
+        font-size: 13px;
+    }
+
+    .home-client-card-payment h4 {
+        font-size: 17px;
+    }
+
+    .home-client-card-payment p {
+        font-size: 13px;
+    }
+
+    .home-client-card-plans h4 {
+        font-size: 17px;
+    }
+
+    .home-client-card-plans p {
+        font-size: 13px;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .home-client-page {
+        height: 100vh;
+    }
+
+    .home-client-logo img {
+        width: 150px;
+        height: 40px;
+    }
+
+    .home-client-menu {
+        display: none;
+    }
+
+    .home-client-menu-desktop {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: rgba(158, 99, 255, 1);
+        font-weight: 400;
+        margin-right: 10px;
+    }
+
+    .home-client-menu-desktop p {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .home-client-menu-desktop img {
+        width: 18px;
+        cursor: pointer;
+    }
+
+    .home-client-historic {
+        height: 248px;
+        flex-direction: column;
+        transform: translate(100px, 100px);
+    }
+
+    .home-client-historic h1 {
+        font-size: 65px;
+    }
+
+    .home-client-img-mobile {
+        display: none;
+    }
+
+    .home-client-img-desktop {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 60px;
+        width: 480px;
+        height: 550px;
+    }
+
+    .home-client-cards {
+        flex-direction: row;
+        padding: 0 20px;
+        align-items: end;
+        justify-content: center;
+        height: 470px;
+    }
+
+    .home-client-card-scheduling {
+        border-radius: 150px 150px 0 0;
+        flex-direction: column-reverse;
+        width: 350px;
+        height: 300px;
+        justify-content: right;
+        padding: 20px 60px;
+        gap: 20px;
+    }
+
+    .home-client-card-scheduling h4 {
+        font-size: 20px;
+    }
+
+    .home-client-card-scheduling p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .home-client-card-scheduling img {
+        width: 70px;
+    }
+
+    .home-client-card-profile {
+        border-radius: 150px 150px 0 0;
+        flex-direction: column;
+        width: 300px;
+        height: 360px;
+        margin-left: 0;
+        padding-right: 20px;
+        justify-content: right;
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    .home-client-card-profile h4 {
+        font-size: 20px;
+    }
+
+    .home-client-card-profile p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .home-client-card-profile img {
+        width: 70px;
+    }
+
+    .home-client-card-payment {
+        flex-direction: column-reverse;
+        border-radius: 150px 150px 0 0;
+        height: 250px;
+        width: 290px;
+        justify-content: right;
+        padding-top: 30px;
+        gap: 0;
+    }
+
+    .home-client-card-payment h4 {
+        font-size: 20px;
+    }
+
+    .home-client-card-payment p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .home-client-card-payment img {
+        width: 70px;
+    }
+
+    .home-client-card-plans {
+        flex-direction: column;
+        border-radius: 150px 150px 0 0;
+        height: 300px;
+        width: 320px;
+        margin-left: 0;
+        margin-bottom: 0;
+        justify-content: right;
+        padding-top: 25px;
+        gap: 20px;
+    }
+
+    .client-card-plans-container {
+        padding: 0 0;
+    }
+
+    .home-client-card-plans h4 {
+        font-size: 20px;
+    }
+
+    .home-client-card-plans p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .home-client-card-plans img {
+        width: 70px;
+    }
+
+}
+
+@media(min-width: 1200px) {
+
+    .home-client-historic {
+        height: 133px;
+        transform: translate(120px, 100px);
+    }
+
+    .home-client-img-desktop {
+        right: 200px;
+    }
+
+    .home-client-img-desktop img {
+        width: 500px;
+
+    }
+
+    .home-client-cards {
+        gap: 40px;
+    }
+
+    .home-client-card-scheduling {
+        width: 280px;
+    }
+
+    .home-client-card-profile {
+        width: 260px;
+    }
+
+    .home-client-card-payment {
+        width: 220px;
+    }
+
+    .home-client-card-plans {
+        width: 250px;
+    }
+
+
+}

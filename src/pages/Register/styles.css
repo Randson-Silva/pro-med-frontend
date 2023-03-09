@@ -26,7 +26,7 @@
     text-align: center;
     padding: 0 30px;
     transform: translateY(-47px);
-    height: 60px;
+    height: 50px;
 }
 
 .register-card h1 {
@@ -222,4 +222,10 @@
     .register-page {
         padding: 0 200px;
     }
+
+    .register-card-container {
+        transform: translateX(0);
+        height: 90px;
+    }
+
 }

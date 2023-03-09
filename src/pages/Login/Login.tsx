@@ -143,9 +143,10 @@ function Login() {
                             flexDirection="column"
                         >
                             <TextField
-                            placeholder="Email ou CPF"
-                            type="text"
-                            label="Login"
+                                style={{ textAlign: "left" }}
+                                placeholder="Email ou CPF"
+                                type="text"
+                                label="Login"
                             />
                         </Flex>
 
@@ -157,6 +158,7 @@ function Login() {
                             <Flex flexDirection="column">
 
                                 <TextField
+                                    style={{ textAlign: "left" }}
                                     placeholder="Senha"
                                     label="Senha"
                                     type={show ? 'text' : 'password'}
