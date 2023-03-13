@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React from "react"
-import MedicalCard from "./components/MedicalCard/MedicalCard";
-import ProfessionalSection from "./pages/ProfessionalSection/ProfessionalSection";
 import Home from "./pages/Home/Home";
-import Services from "./pages/Services/Services";
-import ServicesCard from "./components/ServicesCard/ServicesCard"
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register"
+import HomeClient from "./pages/homeClient/homeClient";
+import React from "react"
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ServicesCard />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/home-client" element={<HomeClient/>}/>
       </Routes>
     </Router>
   );

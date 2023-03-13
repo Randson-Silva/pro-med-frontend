@@ -7,6 +7,8 @@ footer{
     justify-content: center;
     color: #FFFF;
     gap: 10px;
+    position: relative;
+    z-index: 4;
 }
 
 footer img{
@@ -15,4 +17,14 @@ footer img{
 
 footer p{
     font-size: 8px;
+}
+
+@media (min-width: 576px) {
+    footer img{
+        width: 15px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
 }
