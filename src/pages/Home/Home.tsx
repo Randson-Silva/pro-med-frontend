@@ -21,6 +21,7 @@ import NurseIcon from "../../assets/img/static/nurseIcon.png"
 import Footer from "../../components/Footer/Footer"
 import SpecializationCard from "../../components/SpecializationCard/SpacializationCard"
 import "./styles.css"
+import NavBar from "../../components/NavBar/NavBar";
 
 function Home() {
 
@@ -30,55 +31,7 @@ function Home() {
 
         <>
             <div className="home-page">
-                <nav>
-                    <div className="home-logo-container">
-                        <img src={Logo} alt=""
-                        />
-                    </div>
-
-                    <div className="home-login-container">
-                        <Button
-                            onClick={() => navigate("/login")}
-                            width={{ sm: "115px", md: "120px" }}
-                            height="38px"
-                            borderRadius="36px"
-                            zIndex="2"
-                            background="rgba(205, 206, 243, 1)"
-                            color="rgba(158, 99, 255, 1)"
-                            borderColor="rgba(95, 0, 189, 0.94) rgba(77, 0, 154, 0)"
-                            border="1px"
-                            cursor="pointer"
-                            _hover={{ background: "rgba(205, 206, 243, 1)" }}
-
-                        >
-                            LOGIN
-                        </Button>
-
-                        <img src={MenuIcon} alt="" />
-                    </div>
-
-                    <div className="home-login-container-desktop">
-                        <p>Home</p>
-                        <p>Médicos</p>
-                        <p>Serviços</p>
-
-                        <Button
-                            onClick={() => navigate('/login')}
-                            width={{ sm: "115px", md: "120px" }}
-                            height="38px"
-                            borderRadius="36px"
-                            background="rgba(205, 206, 243, 1)"
-                            color="rgba(158, 99, 255, 1)"
-                            borderColor="rgba(95, 0, 189, 0.94)
-                            rgba(77, 0, 154, 0)"
-                            border="1px"
-                            cursor="pointer"
-                            _hover={{ background: "rgba(205, 206, 243, 1)" }}
-                        >
-                            LOGIN
-                        </Button>
-                    </div>
-                </nav >
+                <NavBar/>
 
                 <div className="home-components-container">
                     <Box
@@ -152,7 +105,7 @@ function Home() {
                         filter='auto'
                         blur='80px'
                         position="relative"
-                        zIndex={1}
+                        zIndex={0}
                         width={{ sm: "170px", md: "300px", lg: "500px" }}
                         height={{ sm: "400px", md: "500px" }}
                         bottom={{ sm: "-170px", md: "-400px", lg: "1250px" }}
@@ -169,18 +122,16 @@ function Home() {
                         zIndex={-0.5}
                         width={{ lg: "200px" }}
                         height={{ lg: "400px" }}
-                        bottom={{ lg: "-400px", xl: "-700px" }}
+                        bottom="0"
                         right={{ lg: "0px" }}
                         borderRadius="500px"
                     />
-
-
 
                 </div>
 
                 <div className="home-schedule-button">
 
-                    <button>
+                    <button onClick={() => navigate("/login")}>
                         AGENDE SUA CONSULTA
                     </button>
 

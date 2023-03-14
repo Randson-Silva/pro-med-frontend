@@ -7,11 +7,14 @@ import { Box, Button, Flex, FormControl, Icon, Image, InputGroup, InputRightElem
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import CloseButton from "../../components/CloseButton/CloseButton";
 import TextField from "../../components/TextFIeld/TextField";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
 
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -61,7 +64,7 @@ function Register() {
 
                 <div className="register-card">
 
-                    <div className="register-close-buttom">
+                    <div className="register-close-buttom" onClick={() => navigate("/login")}>
                         <CloseButton />
                     </div>
 
@@ -257,6 +260,7 @@ function Register() {
                         <div className="register-buttom">
 
                             <Button
+                                onClick={() => navigate("/login")}
                                 background="rgba(158, 99, 255, 1)"
                                 _hover={{ bg: "rgba(158, 99, 255, 1)" }}
                                 cursor="pointer"

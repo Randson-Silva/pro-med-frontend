@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.professional-page {
+  overflow: hidden;
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.professional-img {
+  position: absolute;
+  width: 280px;
+  right: 0;
+  top: 10px;
+  z-index: 2;
+}
+
+.professional-frase {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', 'Sans-serif';
+  position: absolute;
+  top: 280px;
+  left: 10px
+}
+
+.simple-text {
+  color: #004585;
+  word-spacing: 10px;
+  width: 200px;
+  left: 10px;
+  top: -10px;
+  position: absolute;
+  z-index: 3;
+  font-weight: 500;
+}
+
+.effect-text {
+  font-weight: 900;
+  font-size: 45px;
+  color: #7B2FC6;
+  left: 34px;
+  display: flex;
+  position: relative;
+}
+
+
+.border-effect {
+  color: #00000000;
+  -webkit-text-stroke: 2px #7B2FC6;
+  left: 0;
+  z-index: 3;
+}
+
+.no-effect {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.professional-components-container {
+  height: 450px;
+}
+
+.professional-purple-component {
+  position: absolute;
+  top: 130px;
+  width: 250px;
+  z-index: 1;
+}
+
+.professional-purple-component-desktop {
+  display: none;
+}
+
+.rounded-rectangle-2 {
+  width: 300px;
+  position: absolute;
+  right: -0px;
+  top: 300px;
+  z-index: 1;
+}
+
+.rounded-rectangle-3 {
+  display: none;
+}
+
+.rounded-rectangle-4 {
+  display: none;
+}
+
+.adesivo {
+  width: 80px;
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  z-index: 0.5;
+}
+
+.adesivo-2 {
+  width: 60px;
+  position: absolute;
+  top: 310px;
+  left: 15px;
+  z-index: 3;
+}
+
+.adesivo-3 {
+  width: 80px;
+  position: absolute;
+  top: 120px;
+  right: 15px;
+  z-index: 4;
+}
+
+.adesivo-4 {
+  width: 80px;
+  position: absolute;
+  top: 470px;
+  left: 10px;
+  z-index: -1;
+}
+
+.adesivo-5 {
+  width: 80px;
+  position: absolute;
+  top: 670px;
+  right: 150px;
+  z-index: 4;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 50px 50px;
+  gap: 40px;
+  justify-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.professional-img-2 {
+  display: none;
+}
+
+
+@media(min-width: 576px) {
+
+  .professional-components-container {
+    height: 530px;
+  }
+
+  .professional-purple-component {
+    width: 300px;
+  }
+
+  .professional-img {
+    width: 370px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rounded-rectangle-2 {
+    display: none;
+  }
+
+  .rounded-rectangle-3 {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 390px;
+    z-index: 1;
+  }
+
+
+  .simple-text {
+    word-spacing: 17px;
+    font-size: 25px;
+    left: 35px;
+    width: 250px;
+  }
+
+
+  .effect-text {
+    font-size: 70px;
+    left: 80px;
+  }
+
+  .adesivo {
+    width: 100px;
+    top: 100px;
+    left: 60px;
+  }
+
+  .adesivo-2 {
+    width: 70px;
+    left: 60px;
+    top: 330px;
+  }
+
+  .adesivo-3 {
+    top: 50px;
+  }
+}
+
+@media(min-width: 992px) {
+  .professional-login-container-desktop {
+    color: #9E63FF;
+    gap: 13px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+  }
+
+  .professional-logo {
+    width: 130px;
+  }
+
+  .professional-login-container {
+    display: none;
+  }
+
+  .professional-login-container img {
+    display: none;
+  }
+
+  .professional-components-container {
+    height: 600px;
+  }
+
+  .professional-purple-component {
+    display: none;
+  }
+
+  .professional-purple-component-desktop {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    z-index: 0.5;
+  }
+
+  .rounded-rectangle-3 {
+    display: none;
+  }
+
+  .rounded-rectangle-2 {
+    top: 250px;
+    display: flex;
+  }
+
+  .professional-img {
+    display: none;
+  }
+
+  .professional-img-2 {
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    width: 600px;
+    z-index: 1;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .professional-frase {
+    left: 80px;
+  }
+
+  .simple-text {
+    font-size: 23px;
+    left: 125px;
+    top: 105px;
+    width: 300px;
+    word-spacing: 19px;
+  }
+
+  .effect-text {
+    top: 110px;
+    left: 150px;
+    font-size: 80px;
+  }
+
+  .no-effect {
+    z-index: 2;
+  }
+
+  .border-effect {
+    z-index: 3;
+  }
+
+
+  .adesivo-4 {
+    display: none;
+  }
+
+  .adesivo {
+    width: 150px;
+    left: 180px;
+  }
+
+  .adesivo-2 {
+    width: 80px;
+    top: 450px;
+    left: 180px;
+  }
+
+  .adesivo-5 {
+    display: none;
+  }
+
+  .adesivo-3 {
+    display: none;
+  }
+}
+
+@media(min-width: 1200px) {
+
+  .professional-frase {
+    left: 200px;
+  }
+
+  .simple-text {
+    left: 168px;
+  }
+
+  .effect-text {
+    font-size: 110px;
+  }
+
+  .card-container {
+    gap: 90px 0;
+  }
+
+  .professional-components-container {
+    height: 750px;
+  }
+
+  .professional-img-2 {
+    top: -150px;
+    width: 850px;
+  }
+
+  .professional-purple-component-desktop {
+    width: 800px;
+    left: -50px;
+  }
+
+  .adesivo {
+    top: 160px;
+    width: 250px;
+    left: 120px;
+  }
+
+  .adesivo-2 {
+    left: 290px;
+    width: 110px;
+    top: 470px;
+  }
+
+}

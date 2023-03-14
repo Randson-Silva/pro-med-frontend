@@ -1,20 +1,27 @@
-import { FormControl, Text, Input, InputGroup, InputRightElement, Button, FormLabel, Flex, Box, Image, Icon } from "@chakra-ui/react";
+import { FormControl, Text, Input, InputGroup, InputRightElement, Button, FormLabel, Flex, Box, Image, Icon, CardBody } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import { useNavigate } from "react-router-dom";
 import ChairIcon from "../../assets/img/static/chairIcon.png"
 import MascIcon from "../../assets/img/static/mascIcon.png"
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css"
 import TextField from "../../components/TextFIeld/TextField";
+import CloseButton from "../../components/CloseButton/CloseButton";
+import { isMotionComponent } from "framer-motion";
 
 function Login() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
-
     const navigate = useNavigate()
+
+    function Alert (){
+        alert("Fucionalidade Indisponível")
+    }
     return (
         <>
             <div className="login-page">
+
+
                 <Box
                     boxSize='250px'
                     background="rgba(203, 220, 244, 1)"
@@ -130,7 +137,7 @@ function Login() {
                         Sign In
                     </h1>
 
-                    <p>
+                    <p onClick={() => navigate("/register")}>
                         Ainda não possui cadastro? <span>Cadastre-se agora!</span>
                     </p>
 
@@ -202,6 +209,7 @@ function Login() {
                             </Button>
 
                             <Text
+                            onClick={Alert}
                                 marginTop="7px"
                                 cursor="pointer"
                             >
