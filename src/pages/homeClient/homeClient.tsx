@@ -1,5 +1,5 @@
 import Logo from "../../assets/img/static/logo.png"
-import MenuIcon from "../../assets/img/static/MenuIcon.png"
+import MenuIcon from "../../assets/img/static/menuIcon.png"
 import MedicalImg from "../../assets/img/static/homeClientMedical.png"
 import MedicalImgDesktop from "../../assets/img/static/homeClientMedicalDesktop.png"
 import Body from "../../assets/img/static/bodyIcon.png"
@@ -52,9 +52,9 @@ function homeClient() {
                     position="absolute"
                     zIndex={1}
                     width={{ sm: "200px", lg: "300px" }}
-                    height={{ sm: "200px", lg: "260px", xl: "300px" }}
-                    bottom={{ sm: "600px", lg: "90px", xl: "30px" }}
-                    right={{ sm: "0px", lg: "180px", xl: "370px" }}
+                    height={{ sm: "200px", lg: "260px" }}
+                    bottom={{ sm: "600px", lg: "90px", xl: "10px" }}
+                    right={{ sm: "0px", lg: "180px", xl: "350px" }}
                 />
 
                 <Box
@@ -66,7 +66,7 @@ function homeClient() {
                     zIndex={3}
                     width={{ sm: "200px", lg: "500px", xl: "600px" }}
                     height={{ sm: "530px", lg: "290px" }}
-                    bottom={{ sm: "-150px", xl: "-150px" }}
+                    bottom={{ sm: "-150px", xl: "-220px" }}
                     left={{ xl: "80px" }}
                 />
 
@@ -93,8 +93,8 @@ function homeClient() {
                     zIndex={{ sm: "2", lg: "3" }}
                     width={{ sm: "230px", lg: "300px" }}
                     height={{ sm: "260px", lg: "400px" }}
-                    bottom={{ sm: "0", lg: "-160px", xl: "-130px" }}
-                    right={{ sm: "0", lg: "130px", xl: "300px" }}
+                    bottom={{ sm: "0", lg: "-260px", xl: "-340px" }}
+                    right={{ sm: "0", xl: "140px" }}
                     borderRadius="50px"
                 />
                 <nav>
@@ -127,7 +127,7 @@ function homeClient() {
 
                         <p>Você ainda não preencheu seu histórico
                             <br />
-                            <span>Clique aqui para preenche-lo!</span></p>
+                            <span>Clique aq para preenche-lo!</span></p>
 
 
                     </div>
@@ -141,51 +141,48 @@ function homeClient() {
                     <img src={MedicalImgDesktop} alt="" />
                 </div>
 
-                <div className="home-client-container">
-                    <div className="home-client-cards">
-                        <div className="home-client-card-scheduling">
-                            <div className="client-card-scheduling-container">
+                <div className="home-client-cards">
+                    <div className="home-client-card-scheduling">
+                        <div className="client-card-scheduling-container">
 
-                                <h4>Agendamentos</h4>
-                                <p>Neste página, você tem a possibilidade de marcar novas consultas e acompanhar as próximas agendadas.</p>
+                            <h4>Agendamentos</h4>
+                            <p>Neste página, você tem a possibilidade de marcar novas consultas e acompanhar as próximas agendadas.</p>
 
-                            </div>
-
-                            <img src={Medical} alt="" />
                         </div>
 
-                        <div className="home-client-card-profile">
-                            <img src={Body} alt="" />
-                            <div className="client-card-profile-container">
-
-                                <h4>Perfil</h4>
-                                <p>Nesta página, você pode ver o histórico de suas consultas passadas, acessar suas informações pessoais, solicitar laudos médicos e estabelecer uma comunicação direta com seu médico.</p></div>
-                        </div>
-
-                        <div className="home-client-card-payment">
-                            <div className="client-card-payment-container">
-
-                                <h4>Pagamentos</h4>
-                                <p>Nesta página, é possível visualizar o histórico dos seus pagamentos e verificar se eles foram aprovados.</p>
-                            </div>
-
-                            <img src={Dollar} alt="" />
-                        </div>
-
-                        <div className="home-client-card-plans">
-
-                            <img src={Heart} alt="" />
-
-                            <div className="client-card-plans-container">
-                                <h4>Planos Médicos</h4>
-                                <p>Nessa página, você poderá verificar as opções de planos médicos disponíveis e escolher aquela que mais atenda às suas necessidades.</p>
-                            </div>
-                        </div>
+                        <img src={Medical} alt="" />
                     </div>
 
-                        <Footer />
-              
+                    <div className="home-client-card-profile">
+                        <img src={Body} alt="" />
+                        <div className="client-card-profile-container">
+
+                            <h4>Perfil</h4>
+                            <p>Nesta página, você pode ver o histórico de suas consultas passadas, acessar suas informações pessoais, solicitar laudos médicos e estabelecer uma comunicação direta com seu médico.</p></div>
+                    </div>
+
+                    <div className="home-client-card-payment">
+                        <div className="client-card-payment-container">
+
+                            <h4>Pagamentos</h4>
+                            <p>Nesta página, é possível visualizar o histórico dos seus pagamentos e verificar se eles foram aprovados.</p>
+                        </div>
+
+                        <img src={Dollar} alt="" />
+                    </div>
+
+                    <div className="home-client-card-plans">
+
+                        <img src={Heart} alt="" />
+
+                        <div className="client-card-plans-container">
+                            <h4>Planos Médicos</h4>
+                            <p>Nessa página, você poderá verificar as opções de planos médicos disponíveis e escolher aquela que mais atenda às suas necessidades.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <Footer />
             </div>
         </>
     )

@@ -2,10 +2,13 @@
 
 .services-card {
     background-color: #ebebeb5f;
-    width: 180px;
+    width: 270px;
     height: 160px;
     border: rgba(76, 169, 255, 0.3) 0.5px solid;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card-text {
@@ -14,7 +17,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', 'sans serif';
     padding: 30px;
     gap: 15px;
     line-height: 1;
@@ -33,35 +35,62 @@
     color: rgba(158, 99, 255, 1);
 }
 
-.card-button {
-    display: flex;
-    font-weight: bold;
-    font-size: 10px;
-    background-color: rgba(123, 47, 198, 1);
-    color: rgba(235, 235, 235, 1);
-    width: 112px;
-    height: 22px;
-    border-radius: 7px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 18%;
-}
 
-@media (min-width: 425px) {
+
+@media (min-width: 576px) {
     .services-card {
-        width: 200px;
-        height: 170px;
-    }
-
-    .card-text {
-        gap: 20px;
+        width: 400px;
+        height: 200px
     }
 
     .card-button {
-        left: 22%;
-        height: 25px;
-        top: 5px;
+        margin-top: 30px;
     }
-  }
+
+    .card-text h1 {
+        font-size: 16px;
+    }
+
+    .card-text span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .services-card {
+        background-color: rgba(235, 235, 235, 0.4);
+        height: 160px;
+        width: 350px;
+    }
+
+    .card-text h1 {
+        font-size: 14px;
+    }
+
+    .card-text span {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .services-card {
+        width: 550px;
+        height: 280px;
+        border-radius: 50px;
+    }
+
+    .card-text {
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .card-text h1 {
+        font-size: 25px;
+    }
+
+    .card-text span {
+        font-size: 20px;
+    }
+}
   

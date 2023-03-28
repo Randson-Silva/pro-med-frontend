@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .card {
     height: 155px;
@@ -10,7 +11,6 @@
     flex-direction: column;
     background-color: #EBEBEB66;
     gap: 6px;
-    z-index: 3;
 }
 
 .img-container {
@@ -33,27 +33,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .medical-name {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 13px;
 }
 
 .medical-specialization {
-    font-size: 9px;
-    font-weight: 500;
+    font-size: 10px;
 }
 
 .medical-code {
-    font-size: 9px;
-    font-weight: 500;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1280px) {
     .card {
-        width: 200px;
-        height: 260px;
+        width: 230px;
+        height: 280px;
         border-radius: 27px;
         gap: 15px;
     }
@@ -63,7 +62,7 @@
     }
 
     .medical-name {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .medical-specialization {

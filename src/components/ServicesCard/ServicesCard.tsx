@@ -1,15 +1,28 @@
 import React from "react";
 import "./styles.css"
+import CardButton from "../CardButton/CardButton"
 
-function ServicesCard() {
+function ServicesCard(props: {
+    style?: React.CSSProperties;
+    styleTitle: React.CSSProperties;
+    styleText: React.CSSProperties;
+    styleButton: React.CSSProperties;
+    title: string;
+    text: string;
+}) {
     return (
         <>
-            <div className="services-card">
+        
+            <div className="services-card" style={props.style}>
                 <div className="card-text">
-                    <h1>EXAMES LABORATORIAIS</h1>
-                    <span>São testes que avaliam o estado de saúde geral do paciente, incluindo análises de sangue, urina e fezes.</span>
+                    <h1 style={props.styleTitle}>{props.title}</h1>
+                    <span className="" style={props.styleText}>{props.text}</span>
                 </div>
-                <span className="card-button">FALE CONOSCO</span>
+
+                <div className="card-button" style={props.styleButton}>
+                    <CardButton />
+                </div>
+                
             </div>
         </>  
     );

@@ -3,6 +3,41 @@
     background-color: rgba(235, 235, 235, 1);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    gap: 30px;
+    padding: 10px 15px;
+}
+
+.home-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logo-container img {
+    height: 35px;
+    width: 125px;
+}
+
+.home-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-login-container-desktop {
+    display: none;
+}
+
+.home-login-container img {
+    width: 30px;
+    height: 20px;
+}
+
 .home-components-container {
     height: 430px;
 }
@@ -221,6 +256,20 @@
 }
 
 @media (min-width: 576px) {
+    .home-logo-container img {
+        height: 40px;
+        width: 150px;
+    }
+
+    .home-components-container {
+        height: 750px;
+    }
+
+    .home-login-container img {
+        height: 32px;
+        width: 45px;
+    }
+
     .home-purple-component-mobile img {
         width: 500px;
     }
@@ -233,10 +282,6 @@
 
     .home-frase-container h1 {
         font-size: 50px;
-    }
-
-    .home-components-container{
-        height: 750px;
     }
 
     .home-frase-container p {
@@ -302,6 +347,22 @@
 
 @media(min-width: 992px) {
 
+    .home-login-container {
+        display: none;
+    }
+
+    .home-login-container-desktop {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 2;
+    }
+
+    .home-login-container-desktop p {
+        font-weight: 400;
+        color: #9E63FF;
+        cursor: pointer;
+    }
 
     .home-medical-component-mobile {
         display: none;
@@ -333,7 +394,7 @@
     }
 
     .home-components-container {
-        height: 500px;
+        height: 400px;
     }
 
     .home-frase-container {
@@ -452,6 +513,10 @@
 
     .home-frase-container {
         left: 250px;
+    }
+
+    .home-components-container {
+        height: 600px;
     }
 
     .home-purple-component-desktop img {
