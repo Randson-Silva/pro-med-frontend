@@ -3,8 +3,11 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register"
 import HomeClient from "./pages/homeClient/homeClient";
-import ProfessionalPage from "./pages/ProfessionalSection/ProfessionalSection";
 import Services from "./pages/Services/Services";
+import PaymentPage from "./pages/Payment/paymentPage";
+import Profile from "./pages/Profile/clientProfile"
+import Professional from "./pages/professionalPage/professionalPage"
+import Plans from "./pages/Plans/plans";
 
 function App() {
   return (
@@ -14,8 +17,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home-client" element={<HomeClient/>}/>
-        <Route path="/professional-page" element={<ProfessionalPage/>}/>
         <Route path="/services" element={<Services/>}/>
+        <Route path="/payment" element={<PaymentPage/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/professional" element={<Professional/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/plans" element={<Plans/>}/>
       </Routes>
     </Router>
   );

@@ -1,0 +1,237 @@
+.payment-page {
+    height: 100vh;
+    background-color: rgba(235, 235, 235, 1);
+    overflow: hidden;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.payment-purple-component {
+    background: linear-gradient(179.99deg, #9E63FF 0%, rgba(159, 99, 255, 0.033) 79.19%);
+    border-radius: 120px 120px 0 0;
+    position: relative;
+    display: flex;
+    height: 90%;
+    bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    width: 200px;
+    padding: 50px 0;
+
+}
+
+.payment-frase {
+    line-height: 23px;
+    margin-bottom: 70px;
+}
+
+.payment-frase p {
+    color: #004585;
+    transform: translateX(22px);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.payment-frase h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #7B2FC6;
+    -webkit-text-stroke: 2px #EBEBEB;
+}
+
+.payment-frase span {
+    color: #004585;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    left: 120px;
+}
+
+.payment-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transform: translateY(-50px);
+}
+
+
+.payment-white-component-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.payment-purple-component-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+
+.payment-white-component {
+    background-color: white;
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    border-radius: 0 0 70px 80px;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.payment-income {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(235, 235, 235, 0.6);
+    backdrop-filter: blur(10px);
+    border: #9E63FF 2px solid;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    width: 140px;
+    top: 25px;
+    bottom: 180px;
+    padding: 15px 0 0 0;
+}
+
+.payment-income p {
+    color: rgba(158, 99, 255, 1);
+    font-size: 9px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.payment-income h1 {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 800;
+}
+
+.payment-income h2 {
+    color: rgba(158, 99, 255, 1);
+    font-weight: 800;
+}
+
+.payment-income span {
+    color: rgba(203, 206, 234, 1);
+    font-weight: 800;
+    font-size: 12px;
+    text-decoration-line: line-through;
+}
+
+.payment-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(min-width: 576px) {
+    .payment-container {
+        gap: 50px;
+    }
+
+    .payment-purple-component {
+        width: 260px;
+        border-radius: 150px 150px 0 0;
+    }
+
+
+    .payment-frase {
+        line-height: 26px;
+    }
+
+    .payment-frase p {
+        font-size: 15px;
+        transform: translateX(40px);
+    }
+
+    .payment-frase h1 {
+        font-size: 40px;
+    }
+
+    .payment-frase span {
+        font-size: 15px;
+        left: 190px;
+    }
+
+    .payment-white-component {
+        right: 90px;
+    }
+
+    .payment-income {
+        width: 170px;
+    }
+
+    .payment-income p {
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 700px) {
+    .payment-white-component {
+        right: 170px;
+    }
+}
+
+@media(min-width: 992px) {
+    .payment-page {
+        height: auto;
+    }
+
+    .payment-purple-component {
+        width: 300px;
+        height: 700px;
+        border-radius: 170px 170px 0 0
+    }
+
+    .payment-white-component {
+        position: relative;
+        right: 0;
+        top: -100px;
+        border-radius: 0 0 120px 120px;
+        height: 500px;
+        width: 250px;
+    }
+
+    .payment-frase h1 {
+        font-size: 50px;
+    }
+
+    .payment-income {
+        top: -80px;
+        width: 220px;
+    }
+
+    .payment-income p {
+        font-size: 10px;
+    }
+
+    .payment-income h1 {
+        font-size: 20px;
+    }
+
+    .payment-income h2 {
+        font-size: 18px;
+
+    }
+
+    .payment-frase p {
+        font-size: 15px;
+        transform: translateX(70px);
+    }
+
+
+
+}
