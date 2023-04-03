@@ -42,7 +42,7 @@ function PlansCard(props: {
                                 color="#C29DFF"
                             >
                                 ASSINAR AGORA!
-                            </Button>
+                            </Button> 
                         </div>
                     </div>
                 </div>

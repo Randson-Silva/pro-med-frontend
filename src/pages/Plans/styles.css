@@ -84,7 +84,6 @@
 
     .plans-purple-component img {
         transform: translateY(-100px);
-
     }
 }
 
@@ -148,7 +147,7 @@
 }
 
 @media(min-width: 1200px) {
-    
+
     .plans-purple-component {
         height: 550px;
     }
