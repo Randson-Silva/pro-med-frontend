@@ -387,10 +387,14 @@ nav {
 
     .home-medical-component-desktop img {
         position: absolute;
-        width: 540px;
+        width: 50%;
         top: 0;
         right: 0;
         z-index: 1;
+    }
+
+    .home-medical-component-desktop img {
+        width: 50%;
     }
 
     .home-components-container {
@@ -520,15 +524,17 @@ nav {
     }
 
     .home-purple-component-desktop img {
-        width: 700px;
+        width: 50%;
+        left: 20px;
     }
 
     .home-medical-component-desktop img {
-        width: 700px;
+        width: 50%;
+        top: -40px;
     }
 
     .home-components-container {
-        height: 530px;
+        height: 580px;
     }
 
     .home-schedule-button button {

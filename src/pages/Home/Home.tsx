@@ -1,6 +1,5 @@
 import { Button, Box, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import React from "react";
 import MenuIcon from "../../assets/img/static/menuIcon.png"
 import PurpleComponentMobile from "../../assets/img/static/purpleComponentMobile.png"
 import PurpleComponentDesktop from "../../assets/img/static/purpleComponentDesktop.png"
@@ -49,7 +48,6 @@ function Home() {
                             border="1px"
                             cursor="pointer"
                             _hover={{ background: "rgba(205, 206, 243, 1)" }}
-
                         >
                             LOGIN
                         </Button>
@@ -158,23 +156,21 @@ function Home() {
                         bottom={{ sm: "-170px", md: "-400px", lg: "1250px" }}
                         borderRadius={{ sm: "500px", lg: "200px" }}
                     />
-                    
+
                     <Box
                         display={{ sm: "none", lg: "flex" }}
                         boxSize='250px'
-                        background="rgba(173, 230, 255, 1)"
+                        background="rgba(203, 220, 244, 1)"
                         filter='auto'
                         blur={{ lg: "80px", xl: "100px" }}
                         position="absolute"
                         zIndex={-0.5}
                         width={{ lg: "200px" }}
-                        height={{ lg: "400px" }}
-                        bottom={{ lg: "-400px", xl: "-700px" }}
+                        height={{ lg: "300px" }}
+                        bottom="0"
                         right={{ lg: "0px" }}
                         borderRadius="500px"
                     />
-
-
 
                 </div>
 

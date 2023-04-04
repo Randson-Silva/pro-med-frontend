@@ -1,5 +1,6 @@
 .home-client-page {
     overflow: hidden;
+    overflow-y: hidden;
     background-color: rgba(235, 235, 235, 1);
     position: relative;
 }
@@ -347,16 +348,18 @@
 
     .home-client-cards {
         flex-direction: row;
-        padding: 0 20px;
         align-items: end;
         justify-content: center;
-        height: 470px;
+        bottom: 10px;
+        position: absolute;
+        width: 100%;
+
     }
 
     .home-client-card-scheduling {
         border-radius: 150px 150px 0 0;
         flex-direction: column-reverse;
-        width: 350px;
+        width: 250px;
         height: 300px;
         justify-content: right;
         padding: 20px 60px;
@@ -379,7 +382,7 @@
     .home-client-card-profile {
         border-radius: 150px 150px 0 0;
         flex-direction: column;
-        width: 300px;
+        width: 230px;
         height: 360px;
         margin-left: 0;
         padding-right: 20px;
@@ -405,7 +408,7 @@
         flex-direction: column-reverse;
         border-radius: 150px 150px 0 0;
         height: 250px;
-        width: 290px;
+        width: 230px;
         justify-content: right;
         padding-top: 30px;
         gap: 0;
@@ -428,7 +431,7 @@
         flex-direction: column;
         border-radius: 150px 150px 0 0;
         height: 300px;
-        width: 320px;
+        width: 230px;
         margin-left: 0;
         margin-bottom: 0;
         justify-content: right;
@@ -451,6 +454,12 @@
 
     .home-client-card-plans img {
         width: 70px;
+    }
+
+    .home-client-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
 }
@@ -477,18 +486,22 @@
 
     .home-client-card-scheduling {
         width: 280px;
+        height: 350px;
     }
 
     .home-client-card-profile {
         width: 260px;
+        height: 420px;
     }
 
     .home-client-card-payment {
         width: 220px;
+        height: 300px;
     }
 
     .home-client-card-plans {
         width: 250px;
+        height: 350px;
     }
 
 

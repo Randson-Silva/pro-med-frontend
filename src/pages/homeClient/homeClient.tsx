@@ -127,7 +127,8 @@ function homeClient() {
 
                         <p>Você ainda não preencheu seu histórico
                             <br />
-                            <span>Clique aq para preenche-lo!</span></p>
+                            <span>Clique aqui para preenche-lo!</span>
+                        </p>
 
 
                     </div>
@@ -182,7 +183,9 @@ function homeClient() {
                     </div>
                 </div>
 
-                <Footer />
+                <div className="home-client-footer">
+                    <Footer />
+                </div>
             </div>
         </>
     )
