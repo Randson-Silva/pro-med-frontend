@@ -1,0 +1,53 @@
+.card-remedy-component {
+    background-color: rgba(235, 235, 235, 0.5);
+    backdrop-filter: blur(3px);
+    border: rgba(167, 113, 255, 1) 1px solid;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 105px;
+    height: 115px;
+    position: relative;
+}
+
+.card-remedy-component span {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(123, 47, 198, 1);
+    position: relative;
+    bottom: 17px;
+}
+
+.card-remedy-component img {
+    width: 70px;
+    position: relative;
+    bottom: 20px;
+}
+
+.card-remedy-circle {
+    position: absolute;
+    background-color:rgba(158, 99, 255, 1);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -10px;
+    right: -10px;
+}
+
+@media (min-width: 576px) {
+    .card-remedy-component {
+        width: 150px;
+        height: 165px;
+        border-radius: 30px;
+    }
+
+    .card-remedy-component img {
+        width: 100px;
+    }
+}

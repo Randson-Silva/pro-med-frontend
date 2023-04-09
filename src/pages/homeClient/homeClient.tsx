@@ -66,7 +66,7 @@ function homeClient() {
                     zIndex={3}
                     width={{ sm: "200px", lg: "500px", xl: "600px" }}
                     height={{ sm: "530px", lg: "290px" }}
-                    bottom={{ sm: "-150px", xl: "-220px" }}
+                    bottom={{ sm: "-150px", xl: "220px" }}
                     left={{ xl: "80px" }}
                 />
 
@@ -93,7 +93,7 @@ function homeClient() {
                     zIndex={{ sm: "2", lg: "3" }}
                     width={{ sm: "230px", lg: "300px" }}
                     height={{ sm: "260px", lg: "400px" }}
-                    bottom={{ sm: "0", lg: "-260px", xl: "-340px" }}
+                    bottom={{ sm: "0", lg: "-260px", xl: "340px" }}
                     right={{ sm: "0", xl: "140px" }}
                     borderRadius="50px"
                 />
