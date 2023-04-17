@@ -9,6 +9,7 @@ import Professional from "./pages/Landing/professionalPage/professionalPage"
 import Plans from "./pages/Client/Plans/plans";
 import Profile from "./pages/Client/Profile/clientProfile";
 import Stock from "./pages/Doctor/Stock/Stock";
+import Scheduling from "./pages/Client/Scheduling/scheduling";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/client/payments" element={<PaymentPage/>}/>
         <Route path="/client/plans" element={<Plans/>}/>
         <Route path="/stock" element={<Stock/>}/>
+        <Route path="/scheduling" element={<Scheduling/>}/>
+        <Route path="/profile" element={<Profile/>}/>
       </Routes>
     </Router>
   );
