@@ -4,6 +4,7 @@ import NavBar from "../../../components/NavBar/NavBar";
 import PaymentCard from "../../../components/PaymentCard/paymentCard";
 import MedicalPayment from "../../../assets/img/static/medicalPayment.png"
 import { Box } from "@chakra-ui/react";
+import NavBarClient from "../../../components/NavBarClient/NavBarClient";
 
 function paymentPage() {
     return (
@@ -62,9 +63,9 @@ function paymentPage() {
                     left={{ md: "50px", lg: "180px" }}
                     borderRadius="500px"
                 />
-                <NavBar
-                    style={{ display: "none" }}
-                />
+                
+                <NavBarClient />
+
                 <div className="payment-container">
                     <div className="payment-purple-component-container">
                         <div className="payment-purple-component">

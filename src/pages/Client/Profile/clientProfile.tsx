@@ -1,10 +1,10 @@
 import "./styles.css"
-import NavBar from "../../../components/NavBar/NavBar";
 import ClientProfile from "../../../assets/img/static/clientProfile.png"
 import TextField from "../../../components/TextFIeld/TextField";
 import Footer from "../../../components/Footer/Footer";
 import { Box } from "@chakra-ui/react";
 import MedicalTextField from "../../../components/MedicalTextField/MedicalTextField";
+import NavBarClient from "../../../components/NavBarClient/NavBarClient";
 
 function profileClient() {
     return (
@@ -72,7 +72,7 @@ function profileClient() {
                     bottom="0"
                     right="0"
                 />
-                <NavBar />
+                <NavBarClient />
 
                 <div className="client-profile-container">
                     <div className="client-profile-data">

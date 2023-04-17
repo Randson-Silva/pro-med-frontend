@@ -5,6 +5,7 @@ import PlansCard from "../../../components/PlansCard/PlansCard"
 import PlansImgCard from "../../../assets/img/static/PlansImgCard.png"
 import Footer from "../../../components/Footer/Footer"
 import { Box } from "@chakra-ui/react"
+import NavBarClient from "../../../components/NavBarClient/NavBarClient"
 
 function Plans() {
     return (
@@ -66,7 +67,7 @@ function Plans() {
                     left="0"
                     borderRadius="500px"
                 />
-                <NavBar />
+                <NavBarClient />
 
                 <div className="plans-container">
                     <div className="plans-purple-component">
