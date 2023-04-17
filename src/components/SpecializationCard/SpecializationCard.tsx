@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
-import ArrowLeft from "../../assets/landing/arrowLeft.png";
-import ArrowRight from "../../assets/landing/arrowRight.png";
+import ArrowLeft from "../../assets/landing/home/arrowLeft.png";
+import ArrowRight from "../../assets/landing/home/arrowRight.png";
 import "./styles.css";
 
 interface IProps {

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.card {
+    height: 155px;
+    width: 125px;
+    border-radius: 17px;
+    border: 1px solid #b389de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EBEBEB66;
+    gap: 6px;
+}
+
+.img-container {
+    display: flex;
+    width: 90px;
+    align-items: center;
+}
+
+.img-container img {
+    border-radius: 10px;
+}
+
+.body-container {
+    display: flex;
+    width: 100vh;
+    height: 400px;
+}
+
+.medical-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.medical-name {
+    font-size: 13px;
+}
+
+.medical-specialization {
+    font-size: 10px;
+}
+
+.medical-code {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(min-width: 1280px) {
+    .card {
+        width: 230px;
+        height: 280px;
+        border-radius: 27px;
+        gap: 15px;
+    }
+
+    .img-container {
+        width: 170px;
+    }
+
+    .medical-name {
+        font-size: 20px;
+    }
+
+    .medical-specialization {
+        font-size: 15px;
+    }
+
+    .medical-code {
+        font-size: 13px;
+    }
+}
