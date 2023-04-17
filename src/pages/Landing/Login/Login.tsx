@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 import ChairIcon from "../../../assets/img/static/chairIcon.png"
 import MascIcon from "../../../assets/img/static/mascIcon.png"
 import React from "react";
-import "./styles.css"
 import TextField from "../../../components/TextFIeld/TextField";
+import "./styles.css"
 
 function Login() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
-
     const navigate = useNavigate()
+
     return (
         <>
             <div className="login-page">
@@ -130,7 +130,7 @@ function Login() {
                         Sign In
                     </h1>
 
-                    <p>
+                    <p onClick={() => navigate('/register')}>
                         Ainda não possui cadastro? <span>Cadastre-se agora!</span>
                     </p>
    
@@ -196,7 +196,7 @@ function Login() {
                                 marginTop="20px"
                                 fontWeight="800"
                                 borderRadius="15px"
-                                onClick={() => navigate('/')}
+                                onClick={() => navigate('/client/home')}
                             >
                                 LOGIN
                             </Button>
