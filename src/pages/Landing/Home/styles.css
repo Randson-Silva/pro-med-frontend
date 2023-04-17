@@ -1,0 +1,574 @@
+.home-page {
+    overflow: hidden;
+    background-color: rgba(235, 235, 235, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    gap: 30px;
+    padding: 10px 15px;
+}
+
+.home-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logo-container img {
+    height: 35px;
+    width: 125px;
+}
+
+.home-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-login-container-desktop {
+    display: none;
+}
+
+.home-login-container img {
+    width: 30px;
+    height: 20px;
+}
+
+.home-components-container {
+    height: 430px;
+}
+
+.home-purple-component-mobile img {
+    position: absolute;
+    width: 280px;
+    z-index: 1;
+}
+
+.home-medical-component-mobile img {
+    position: absolute;
+    width: 280px;
+    right: 0;
+    top: 60px;
+    z-index: 2;
+}
+
+.home-purple-component-desktop {
+    display: none;
+}
+
+.home-medical-component-desktop {
+    display: none;
+}
+
+.home-frase-container {
+    width: 250px;
+    position: absolute;
+    left: 55px;
+    top: 110px;
+    z-index: 2;
+}
+
+.home-frase-container h1 {
+    color: rgba(123, 47, 198, 1);
+    font-weight: 800;
+    font-size: 33px;
+}
+
+.home-frase-container p {
+    color: rgba(0, 69, 133, 1);
+    font-size: 17px;
+    font-weight: 500;
+    transform: translate(-15px, 15px);
+}
+
+.home-frase-container span {
+    color: rgba(0, 69, 133, 1);
+    font-weight: 500;
+    position: relative;
+    left: 3px;
+    top: -17px;
+}
+
+.home-schedule-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home-schedule-button button {
+    width: 280px;
+    height: 60px;
+    background: rgba(123, 47, 198, 1);
+    box-shadow: 0px 0px 51px rgba(77, 0, 154, 0.4);
+    font-weight: 800;
+    font-size: 17px;
+    color: #FFFF;
+    margin-top: 35px;
+    border: none;
+    border-radius: 63px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.home-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.home-text-container h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: rgba(76, 169, 255, 1);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.home-specialization-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-specialization-card-desktop {
+    display: none;
+}
+
+.home-share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-share img {
+    margin-top: 50px;
+    height: 15px;
+    width: 100%;
+    z-index: 2;
+}
+
+.home-information-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+
+.home-information-card-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    border-radius: 70px;
+    background-color: #FFFF;
+    padding: 0 22px 22px 22px;
+    text-align: justify;
+    gap: 20px;
+    z-index: 1;
+}
+
+.home-information-card-img {
+    background: url(../../../assets/landing/clinicalReception.png) no-repeat center center/cover;
+    height: 150px;
+    border-radius: 60px;
+    transform: translateY(-15px);
+}
+
+.home-information-card-img-desktop {
+    background: url(../../../assets/landing/clinicalReceptionDesktop.png) no-repeat center center/cover;
+    display: none;
+}
+
+.home-information-card-container p {
+    font-size: 10px;
+    color: #4CA9FF;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.home-information-card-container span {
+    display: none;
+}
+
+.home-feedback {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 2;
+}
+
+.home-feedback h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(123, 47, 198, 1);
+    font-weight: 800;
+    z-index: 2;
+}
+
+.home-feedback-card {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 95%;
+    background: rgba(204, 204, 204, 1);
+    border-radius: 30px;
+    text-align: justify;
+    padding: 0 10px 0 10px;
+}
+
+.home-feedback-container h4 {
+    color: rgba(123, 47, 198, 1);
+    transform: translateX(15px);
+    font-weight: 800;
+}
+
+.home-feedback-card p {
+    font-size: 8px;
+    font-weight: 500;
+    color: rgba(122, 73, 201, 1);
+    line-height: 9px;
+}
+
+.home-feedback-card img {
+    position: relative;
+    left: 20px;
+    top: -20px;
+    width: 170px;
+    height: 190px;
+}
+
+.home-feedback-container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-footer {
+    margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+    .home-logo-container img {
+        height: 40px;
+        width: 150px;
+    }
+
+    .home-components-container {
+        height: 750px;
+    }
+
+    .home-login-container img {
+        height: 32px;
+        width: 45px;
+    }
+
+    .home-purple-component-mobile img {
+        width: 500px;
+    }
+
+    .home-frase-container {
+        width: 400px;
+        left: 65px;
+        top: 180px;
+    }
+
+    .home-frase-container h1 {
+        font-size: 50px;
+    }
+
+    .home-frase-container p {
+        font-size: 23px;
+        transform: translate(-20px, 24px);
+    }
+
+    .home-frase-container span {
+        font-size: 23px;
+        top: -23px;
+    }
+
+    .home-medical-component-mobile img {
+        width: 500px;
+    }
+
+    .home-schedule-button button {
+        width: 310px;
+        height: 70px;
+    }
+
+    .home-text-container h2 {
+        font-size: 19px;
+    }
+
+    .home-share img {
+        height: 20px;
+        width: 80%;
+    }
+
+    .home-information-card-container {
+        height: 300px;
+    }
+
+    .home-information-card-container p {
+        height: 80px;
+        font-size: 12px;
+    }
+
+    .home-feedback h3 {
+        font-size: 20px;
+    }
+
+    .home-feedback h4 {
+        font-size: 18px;
+    }
+
+    .home-feedback-card {
+        height: 180px;
+        padding: 0 0 0 20px;
+    }
+
+    .home-feedback-card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-feedback-card p {
+        font-size: 65%;
+        line-height: 15px;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .home-login-container {
+        display: none;
+    }
+
+    .home-login-container-desktop {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 2;
+    }
+
+    .home-login-container-desktop p {
+        font-weight: 400;
+        color: #9E63FF;
+        cursor: pointer;
+    }
+
+    .home-medical-component-mobile {
+        display: none;
+    }
+
+    .home-medical-component-desktop {
+        display: flex;
+    }
+
+    .home-purple-component-desktop img {
+        width: 530px;
+        z-index: 2;
+    }
+
+    .home-purple-component-mobile img {
+        display: none;
+    }
+
+    .home-purple-component-desktop {
+        display: flex;
+    }
+
+    .home-medical-component-desktop img {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .home-medical-component-desktop img {
+        width: 50%;
+    }
+
+    .home-components-container {
+        height: 400px;
+    }
+
+    .home-frase-container {
+        left: 140px;
+    }
+
+    .home-text-container {
+        margin-top: 30px;
+        margin-bottom: -30px;
+    }
+
+    .home-specialization-card {
+        display: none;
+    }
+
+    .home-specialization-card-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        z-index: 2;
+    }
+
+    .home-schedule-button button {
+        position: absolute;
+        left: 200px;
+        top: 320px;
+        z-index: 3;
+    }
+
+    .home-information-card {
+        justify-content: center;
+        transform: translateX(200px);
+    }
+
+    .home-information-card-container p {
+        display: none;
+    }
+
+    .home-information-card-container span {
+        display: flex;
+        font-size: 12px;
+        color: #4CA9FF;
+        font-weight: 500;
+        line-height: 12px;
+        width: 100%;
+    }
+
+    .home-information-card-container {
+        width: 500px;
+        padding: 0 50px 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-information-card-img {
+        display: none;
+    }
+
+    .home-information-card-img-desktop {
+        display: flex;
+        position: absolute;
+        height: 280px;
+        border-radius: 90px;
+        width: 440px;
+        left: -430px;
+    }
+
+    .home-text-container h2 {
+        font-size: 22px;
+    }
+
+    .home-share {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-share img {
+        width: 70%;
+        height: 27px;
+    }
+
+    .home-feedback-includes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-feedback-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        position: relative;
+    }
+
+    .home-feedback-card {
+        z-index: 1;
+    }
+
+    .home-feedback-container h4 {
+        position: absolute;
+        top: -25px;
+        left: 25px;
+    }
+
+    .home-feedback-card img {
+        left: 30px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .home-frase-container {
+        left: 250px;
+    }
+
+    .home-frase-container p{
+        font-size: 25px;
+    }
+    
+    .home-frase-container h1{
+        font-size: 60px;
+    }
+
+    .home-frase-container span{
+        font-size: 25px;
+    }
+
+    .home-components-container {
+        height: 600px;
+    }
+
+    .home-purple-component-desktop img {
+        width: 50%;
+        left: 20px;
+    }
+
+    .home-medical-component-desktop img {
+        width: 50%;
+        top: -40px;
+    }
+
+    .home-components-container {
+        height: 580px;
+    }
+
+    .home-schedule-button button {
+        left: 400px;
+    }
+
+    .home-information-card {
+        padding: 0 250px;
+    }
+
+    .home-specialization-card-desktop {
+        gap: 40px;
+    }
+
+    .home-information-card-container {
+        width: 600px;
+        height: 350px;
+        border-radius: 130px;
+        z-index: 1;
+    }
+
+    .home-feedback-container h4 {
+        align-self: center;
+    }
+
+}

@@ -1,14 +1,16 @@
 import { CSSProperties } from "react";
-import ArrowLeft from "../../assets/img/static/arrowLeft.png"
-import ArrowRight from "../../assets/img/static/arrowRight.png"
-import "./styles.css"
+import ArrowLeft from "../../assets/landing/arrowLeft.png";
+import ArrowRight from "../../assets/landing/arrowRight.png";
+import "./styles.css";
 
-function SpecializationCard(props: {
+interface IProps {
     title: string
     text: string
     src: string
     style?: CSSProperties
-}) {
+}
+
+function SpecializationCard({ src, text, title, style }: IProps) {
     return (
         <div className="specialization-card">
             <div className="specialization-arrow-left">
@@ -20,16 +22,16 @@ function SpecializationCard(props: {
             </div>
 
             <div className="specialization-icon">
-                <img src={props.src} />
+                <img src={src} />
             </div>
 
             <div className="specialization-container">
-                <h3 style={props.style ? props.style : { color: "rgba(95, 0, 189, 0.8)" }} >
-                    {props.title}
+                <h3 style={style ? style : { color: "rgba(95, 0, 189, 0.8)" }} >
+                    {title}
                 </h3>
 
-                <p style={props.style ? props.style : { color: "rgba(158, 99, 255, 0.8)" }}>
-                    {props.text}
+                <p style={style ? style : { color: "rgba(158, 99, 255, 0.8)" }}>
+                    {text}
                 </p>
             </div>
         </div>
