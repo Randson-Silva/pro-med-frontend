@@ -38,6 +38,7 @@
     font-weight: 800;
     font-size: 15px;
     transform: translateY(-11px);
+    -webkit-text-stroke: 0.8px #FFF;
 }
 
 .plans-card-container p {
@@ -163,7 +164,7 @@
     }
 
     .plans-card-container h1 {
-        font-size: 25px;
+        font-size: 26px;
 
         transform: translateY(-45px);
     }
