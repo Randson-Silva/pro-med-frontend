@@ -1,8 +1,8 @@
 import "./styles.css"
-import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
-import PaymentCard from "../../components/PaymentCard/paymentCard";
-import MedicalPayment from "../../assets/img/static/medicalPayment.png"
+import Footer from "../../../components/Footer/Footer";
+import NavBar from "../../../components/NavBar/NavBar";
+import PaymentCard from "../../../components/PaymentCard/paymentCard";
+import MedicalPayment from "../../../assets/img/static/medicalPayment.png"
 import { Box } from "@chakra-ui/react";
 
 function paymentPage() {

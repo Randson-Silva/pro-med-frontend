@@ -175,14 +175,14 @@ nav {
 }
 
 .home-information-card-img {
-    background: url(../../assets/img/static/informationCardImg.png) no-repeat center center/cover;
+    background: url(../../../assets/img/static/informationCardImg.png) no-repeat center center/cover;
     height: 150px;
     border-radius: 60px;
     transform: translateY(-15px);
 }
 
 .home-information-card-img-desktop {
-    background: url(../../assets/img/static/InformationCardImgDesktop.png) no-repeat center center/cover;
+    background: url(../../../assets/img/static/InformationCardImgDesktop.png) no-repeat center center/cover;
     display: none;
 }
 
@@ -517,6 +517,16 @@ nav {
 
     .home-frase-container {
         left: 250px;
+    }
+
+    .home-frase-container p{
+        font-size: 25px;
+    }
+    .home-frase-container h1{
+        font-size: 60px;
+    }
+    .home-frase-container span{
+        font-size: 25px;
     }
 
     .home-components-container {

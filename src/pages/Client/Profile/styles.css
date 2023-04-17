@@ -1,0 +1,414 @@
+.client-profile-page {
+    background-color: #EBEBEB;
+}
+
+.client-profile-page h1 {
+    z-index: 1;
+    position: relative;
+}
+
+.client-profile-container {
+    padding: 0 10px;
+    margin-bottom: 340px;
+}
+
+.client-profile-data {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.client-profile-data img {
+    width: 170px;
+}
+
+.client-profile-data-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.client-profile-data-text-desktop {
+    display: none;
+}
+
+.client-profile-data-text h1 {
+    color: #7B2FC6;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 20px;
+}
+
+.client-profile-data-text p {
+    color: #7B2FC6;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.client-profile-birth {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-cpf {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-gender {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-contact {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-rg {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-state {
+    float: left;
+    width: 33.3%;
+    padding: 5px 3px;
+}
+
+.client-profile-city {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-neighborhood {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-road {
+    float: left;
+    width: 80%;
+    padding: 5px 3px;
+}
+
+.client-profile-number {
+    float: left;
+    width: 20%;
+    padding: 5px 3px;
+}
+
+.client-profile-historic {
+    padding: 0 10px;
+    margin-bottom: 360px;
+}
+
+.client-profile-historic h1 {
+    color: #7B2FC6;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.client-profile-type {
+    float: left;
+    width: 20%;
+    padding: 5px 3px;
+}
+
+.client-profile-allergies {
+    float: left;
+    width: 80%;
+    padding: 5px 3px;
+}
+
+.client-profile-disease-history {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-medicines {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-surgeries-history {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-hospitalization {
+    float: left;
+    width: 50%;
+    padding: 5px 3px;
+}
+
+.client-profile-observation {
+    float: left;
+    width: 100%;
+    padding: 5px 3px;
+}
+
+.client-profile-exams {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.client-profile-exams-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.client-profile-exams h1 {
+    color: #7B2FC6;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.client-profile-queries {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.client-profile-queries h1 {
+    color: #7B2FC6;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.client-profile-documents {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-profile-documents h1 {
+    color: #7B2FC6;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.client-profile-footer {
+    margin-top: 50px;
+}
+
+@media(min-width: 576px) {
+    .client-profile-container {
+        padding: 0 30px;
+    }
+
+    .client-profile-historic {
+        padding: 0 30px;
+    }
+
+    .client-profile-exams {
+        padding: 0 30px;
+    }
+
+    .client-profile-queries {
+        padding: 0 30px;
+    }
+
+    .client-profile-documents {
+        padding: 0 30px;
+    }
+}
+
+@media(min-width: 776px) {
+    .client-profile-container {
+        padding: 0 50px;
+    }
+
+    .client-profile-historic {
+        padding: 0 50px;
+    }
+
+    .client-profile-exams {
+        padding: 0 50px;
+    }
+
+    .client-profile-queries {
+        padding: 0 50px;
+    }
+
+    .client-profile-documents {
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .client-profile-data img {
+        width: 700px;
+        z-index: 2;
+    }
+
+    .client-profile-container {
+        display: flex;
+        margin-bottom: 50px;
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .client-profile-data-text-desktop h1 {
+        color: #7B2FC6;
+        font-weight: 700;
+        line-height: 22px;
+        font-size: 24px;
+    }
+
+    .client-profile-data-text-desktop p {
+        color: #7B2FC6;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .client-profile-data-text {
+        display: none;
+    }
+
+    .client-profile-data-text-desktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client-profile-birth {
+        width: 20%;
+    }
+
+    .client-profile-cpf {
+        width: 20%;
+    }
+
+    .client-profile-gender {
+        width: 20%;
+    }
+
+    .client-profile-contact {
+        width: 20%;
+    }
+
+    .client-profile-rg {
+        width: 20%;
+    }
+
+    .client-profile-state {
+        width: 10%;
+    }
+
+    .client-profile-city {
+        width: 26.6%;
+    }
+
+    .client-profile-neighborhood {
+        width: 26.6%;
+    }
+
+    .client-profile-road {
+        width: 26.6%;
+    }
+
+    .client-profile-number {
+        width: 10%;
+    }
+
+    .client-profile-historic {
+        margin-bottom: 200px;
+        padding: 0 30px;
+    }
+
+    .client-profile-type {
+        width: 10%;
+    }
+
+    .client-profile-allergies {
+        width: 30%;
+    }
+
+    .client-profile-disease-history {
+        width: 30%;
+    }
+
+    .client-profile-medicines {
+        width: 30%;
+    }
+
+    .client-profile-surgeries-history {
+        width: 33.3%;
+    }
+
+    .client-profile-hospitalization {
+        width: 33.3%;
+    }
+
+    .client-profile-observation {
+        width: 33.3%;
+    }
+
+    .client-profile-exams {
+        padding: 0 30px;
+    }
+
+    .client-profile-exams-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-profile-queries {
+        padding: 0 30px;
+    }
+
+    .client-profile-documents {
+        padding: 0 30px;
+    }
+
+    .client-profile-documents-container {
+        float: left;
+        width: 20%;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .client-personal-profile {
+        padding: 30px 0;
+    }
+
+    .client-profile-container {
+        padding: 0 80px;
+    }
+
+    .client-profile-historic {
+        padding: 0 80px;
+    }
+
+    .client-profile-exams {
+        padding: 0 80px;
+    }
+
+    .client-profile-queries {
+        padding: 0 80px;
+    }
+
+    .client-profile-documents {
+        padding: 0 80px;
+    }
+}

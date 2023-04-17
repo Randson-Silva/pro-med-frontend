@@ -4,9 +4,9 @@ import CardButton from "../CardButton/CardButton"
 
 function ServicesCard(props: {
     style?: React.CSSProperties;
-    styleTitle: React.CSSProperties;
-    styleText: React.CSSProperties;
-    styleButton: React.CSSProperties;
+    styleTitle?: React.CSSProperties;
+    styleText?: React.CSSProperties;
+    styleButton?: React.CSSProperties;
     title: string;
     text: string;
 }) {

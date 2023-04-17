@@ -23,14 +23,14 @@
 }
 
 .login-card-img {
-    background: url(../../assets/img/static/loginImg.png) no-repeat center center/cover;
+    background: url(../../../assets/img/static/loginImg.png) no-repeat center center/cover;
     height: 150px;
     border-radius: 35px;
     transform: translateY(-100px);
 }
 
 .login-card-img-desktop {
-    background: url(../../assets/img/static/loginImgDesktop.png) no-repeat center center/cover;
+    background: url(../../../assets/img/static/loginImgDesktop.png) no-repeat center center/cover;
     display: none;
 }
 

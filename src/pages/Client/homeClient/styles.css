@@ -291,9 +291,6 @@
 }
 
 @media(min-width: 992px) {
-    .home-client-page {
-        height: 100vh;
-    }
 
     .home-client-logo img {
         width: 150px;
@@ -324,7 +321,7 @@
     }
 
     .home-client-historic {
-        height: 248px;
+        height: 420px;
         flex-direction: column;
         transform: translate(100px, 100px);
     }
@@ -341,7 +338,7 @@
         display: flex;
         position: absolute;
         right: 30px;
-        top: 60px;
+        bottom: 170px;
         width: 480px;
         height: 550px;
     }
@@ -350,8 +347,7 @@
         flex-direction: row;
         align-items: end;
         justify-content: center;
-        bottom: 15px;
-        position: absolute;
+        bottom: 10px;
         width: 100%;
 
     }
@@ -467,7 +463,6 @@
 @media(min-width: 1200px) {
 
     .home-client-historic {
-        height: 133px;
         transform: translate(120px, 100px);
     }
 
@@ -477,7 +472,10 @@
 
     .home-client-img-desktop img {
         width: 500px;
+    }
 
+    .home-client-historic{
+        height: 400px;
     }
 
     .home-client-cards {

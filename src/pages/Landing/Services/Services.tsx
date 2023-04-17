@@ -1,21 +1,16 @@
 import { Button, Box, Image } from "@chakra-ui/react";
-import React, { useState } from "react";
 import "./styles.css";
-import { MenuButton } from "@chakra-ui/react";
-import MenuIcon from "../../assets/img/static/menuIcon.png"
-import Logo from "../../assets/img/static/logo.png"
-import ImageMobile from "../../assets/img/static/servicesImageMobile.png"
-import ImageDesktop from "../../assets/img/static/servicesImageDesktop.png"
-import RemedyAdesive from "../../assets/img/static/adesiveRemedy.png"
-import KeyAdesive from "../../assets/img/static/adesiveKey.png"
-import MicroscopicAdesive from "../../assets/img/static/adesiveMicroscopic.png"
-import ServicesCard from "../../components/ServicesCard/ServicesCard"
-import ServicesSmallCard from "../../components/ServicesSmallCard/ServicesSmallCard"
-import CardButton from "../../components/CardButton/CardButton"
-import ServicesRectangleWhite from "../../assets/img/static/servicesWhiteRectangle.png"
-import ServicesRectangleBlue from "../../assets/img/static/servicesBlueRectangle.png"
-import Footer from "../../components/Footer/Footer"
-import NavBar from "../../components/NavBar/NavBar"
+import ImageMobile from "../../../assets/img/static/servicesImageMobile.png"
+import ImageDesktop from "../../../assets/img/static/servicesImageDesktop.png"
+import RemedyAdesive from "../../../assets/img/static/adesiveRemedy.png"
+import KeyAdesive from "../../../assets/img/static/adesiveKey.png"
+import MicroscopicAdesive from "../../../assets/img/static/adesiveMicroscopic.png"
+import ServicesCard from "../../../components/ServicesCard/ServicesCard"
+import ServicesSmallCard from "../../../components/ServicesSmallCard/ServicesSmallCard"
+import ServicesRectangleWhite from "../../../assets/img/static/servicesWhiteRectangle.png"
+import ServicesRectangleBlue from "../../../assets/img/static/servicesBlueRectangle.png"
+import Footer from "../../../components/Footer/Footer"
+import NavBar from "../../../components/NavBar/NavBar"
 
 
 function Services() {

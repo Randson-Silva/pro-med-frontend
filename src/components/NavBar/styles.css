@@ -4,6 +4,8 @@ nav {
     height: 80px;
     gap: 30px;
     padding: 10px 15px;
+    z-index: 3;
+    position: relative;
 }
 
 .nav-logo-container {
@@ -22,6 +24,10 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.nav-login-container img {
+    width: 35px;
 }
 
 .nav-login-container-desktop {

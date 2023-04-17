@@ -43,7 +43,7 @@ function PlansCard(props: {
                             >
                                 ASSINAR AGORA!
                             </Button> 
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>

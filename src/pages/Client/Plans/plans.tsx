@@ -1,9 +1,9 @@
 import "./styles.css"
-import PlansMedical from "../../assets/img/static/plansMedical.png"
-import NavBar from "../../components/NavBar/NavBar"
-import PlansCard from "../../components/PlansCard/PlansCard"
-import PlansImgCard from "../../assets/img/static/plansImgCard.png"
-import Footer from "../../components/Footer/Footer"
+import PlansMedical from "../../../assets/img/static/plansMedical.png"
+import NavBar from "../../../components/NavBar/NavBar"
+import PlansCard from "../../../components/PlansCard/PlansCard"
+import PlansImgCard from "../../../assets/img/static/PlansImgCard.png"
+import Footer from "../../../components/Footer/Footer"
 import { Box } from "@chakra-ui/react"
 
 function Plans() {

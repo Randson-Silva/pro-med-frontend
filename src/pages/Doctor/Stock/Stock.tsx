@@ -2,15 +2,13 @@ import { Button, Box, Image } from "@chakra-ui/react";
 import React, { useState } from "react";
 import "./styles.css";
 import { MenuButton } from "@chakra-ui/react";
-import Footer from "../../components/Footer/Footer"
-import NavBar from "../../components/NavBar/NavBar"
-import StockImageMobile from "../../assets/img/static/stockImageMobile.png"
-import StockImageDesktop from "../../assets/img/static/stockImageDesktop.png"
-import Logo from "../../assets/img/static/proMedLogo.png"
-import Magnifier from "../../assets/img/static/magnifierImage.png"
-import CardRemedy from "../../components/CardRemedy/CardRemedy"
-import DipironaImage from "../../assets/img/static/dipironaImage.png"
-import NavBarMed from "../../components/NavBarMed/NavBarMed";
+import Footer from "../../../components/Footer/Footer"
+import StockImageMobile from "../../../assets/img/static/stockImageMobile.png"
+import StockImageDesktop from "../../../assets/img/static/stockImageDesktop.png"
+import Magnifier from "../../../assets/img/static/magnifierImage.png"
+import CardRemedy from "../../../components/CardRemedy/CardRemedy"
+import DipironaImage from "../../../assets/img/static/dipironaImage.png"
+import NavBarMed from "../../../components/NavBarMed/NavBarMed";
 
 function Stock() {
     return (

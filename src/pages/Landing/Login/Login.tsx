@@ -1,11 +1,11 @@
 import { FormControl, Text, Input, InputGroup, InputRightElement, Button, FormLabel, Flex, Box, Image, Icon } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import { useNavigate } from "react-router-dom";
-import ChairIcon from "../../assets/img/static/chairIcon.png"
-import MascIcon from "../../assets/img/static/mascIcon.png"
+import ChairIcon from "../../../assets/img/static/chairIcon.png"
+import MascIcon from "../../../assets/img/static/mascIcon.png"
 import React from "react";
 import "./styles.css"
-import TextField from "../../components/TextFIeld/TextField";
+import TextField from "../../../components/TextFIeld/TextField";
 
 function Login() {
     const [show, setShow] = React.useState(false)
@@ -133,7 +133,7 @@ function Login() {
                     <p>
                         Ainda não possui cadastro? <span>Cadastre-se agora!</span>
                     </p>
-
+   
                     <FormControl
                         display="flex"
                         flexDirection="column"
@@ -148,7 +148,7 @@ function Login() {
                                 type="text"
                                 label="Login"
                             />
-                        </Flex>
+                        </Flex> 
 
                         <InputGroup
                             display="flex"

@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.css";
-import MicroscopeIcon from "../../assets/img/static/microscopeIcon.png"
-import NurseIcon from "../../assets/img/static/nurseIcon.png"
-import BandAidIcon from "../../assets/img/static/bandAidIcon.png"
+import MicroscopeIcon from "../../../assets/img/static/microscopeIcon.png"
+import NurseIcon from "../../../assets/img/static/nurseIcon.png"
+import BandAidIcon from "../../../assets/img/static/bandAidIcon.png"
 import { Box, Button, Flex, FormControl, Icon, Image, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import CloseButton from "../../components/CloseButton/CloseButton";
-import TextField from "../../components/TextFIeld/TextField";
+import CloseButton from "../../../components/CloseButton/CloseButton";
+import TextField from "../../../components/TextFIeld/TextField";
 
 function Register() {
 
@@ -111,13 +111,12 @@ function Register() {
 
                         <div className="register-row-birth">
                             <TextField
-                                label="Nascimento"
+                                label="Data de nascimento"
                                 placeholder="00/00/0000"
                                 type="text"
                             />
                         </div>
                         <div className="register-row-cpf">
-
                             <TextField
                                 label="CPF"
                                 placeholder="000.000.000-00"
@@ -189,7 +188,7 @@ function Register() {
                                 type="text"
                             />
                         </div>
-
+    
                         <div className="register-row-password">
                             <InputGroup
                                 display="flex"

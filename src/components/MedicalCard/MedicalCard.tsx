@@ -1,16 +1,19 @@
 import "./styles.css"
-import Teste from "./../../assets/img/static/cardImage.png"
 
-function MedicalCard() {
+function MedicalCard(props: {
+    src: string
+    title: string
+    text: string
+}) {
     return (
         <>
         <div className="card">
             <div className="img-container">
-                <img src={Teste} alt="" />
+                <img src={props.src} />
             </div>
             <div className="medical-date">
-                <span className="medical-name">Dr. Lucas Silva</span>
-                <span className="medical-specialization">Odontólogo</span>
+                <span className="medical-name">{props.title}</span>
+                <span className="medical-specialization">{props.text}</span>
             </div>
 
             <div className="medical-code">

@@ -1,14 +1,14 @@
-import Logo from "../../assets/img/static/logo.png"
-import MenuIcon from "../../assets/img/static/menuIcon.png"
-import MedicalImg from "../../assets/img/static/homeClientMedical.png"
-import MedicalImgDesktop from "../../assets/img/static/homeClientMedicalDesktop.png"
-import Body from "../../assets/img/static/bodyIcon.png"
-import Heart from "../../assets/img/static/whiteHeartIcon.png"
-import Dollar from "../../assets/img/static/dollarIcon.png"
-import Medical from "../../assets/img/static/medicalIcon.png"
-import MenuClose from "../../assets/img/static/menuClose.png"
+import Logo from "../../../assets/img/static/logo.png"
+import MenuIcon from "../../../assets/img/static/menuIcon.png"
+import MedicalImg from "../../../assets/img/static/homeClientMedical.png"
+import MedicalImgDesktop from "../../../assets/img/static/homeClientMedicalDesktop.png"
+import Body from "../../../assets/img/static/bodyIcon.png"
+import Heart from "../../../assets/img/static/whiteHeartIcon.png"
+import Dollar from "../../../assets/img/static/dollarIcon.png"
+import Medical from "../../../assets/img/static/medicalIcon.png"
+import MenuClose from "../../../assets/img/static/menuClose.png"
 import "./styles.css"
-import Footer from "../../components/Footer/Footer"
+import Footer from "../../../components/Footer/Footer"
 import { Box } from "@chakra-ui/react"
 import { InfoIcon } from "@chakra-ui/icons"
 
@@ -66,7 +66,7 @@ function homeClient() {
                     zIndex={3}
                     width={{ sm: "200px", lg: "500px", xl: "600px" }}
                     height={{ sm: "530px", lg: "290px" }}
-                    bottom={{ sm: "-150px", xl: "220px" }}
+                    bottom={{ sm: "-150px", xl: "-220px" }}
                     left={{ xl: "80px" }}
                 />
 
@@ -93,7 +93,7 @@ function homeClient() {
                     zIndex={{ sm: "2", lg: "3" }}
                     width={{ sm: "230px", lg: "300px" }}
                     height={{ sm: "260px", lg: "400px" }}
-                    bottom={{ sm: "0", lg: "-260px", xl: "340px" }}
+                    bottom={{ sm: "0", lg: "-260px", xl: "-340px" }}
                     right={{ sm: "0", xl: "140px" }}
                     borderRadius="50px"
                 />

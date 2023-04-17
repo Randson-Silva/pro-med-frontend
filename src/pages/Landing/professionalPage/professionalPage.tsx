@@ -1,23 +1,20 @@
-import { Box, Button } from '@chakra-ui/react';
-import React from 'react';
+import { Box } from '@chakra-ui/react';
 import "./styles.css";
-import Professional from "./../../assets/img/static/professionalImgMobile.png"
-import Professional2 from "./../../assets/img/static/professionalImgDesktop.png"
-import Rectangle from "./../../assets/img/static/rectangle-1.png"
-import Rectangle2 from "./../../assets/img/static/rectangle-2.png"
-import Rectangle3 from "./../../assets/img/static/rectangle-3.png"
-import Logo from "../../assets/img/static/logo.png"
-import MenuIcon from "../../assets/img/static/menuIcon.png"
-import MedicalCard from "../../components/MedicalCard/MedicalCard";
-import Adesivo from "./../../assets/img/static/adesiveLung.png"
-import Adesivo2 from "./../../assets/img/static/adesiveCross.png"
-import Adesivo3 from "./../../assets/img/static/adesiveBand.png"
-import Adesivo4 from "./../../assets/img/static/adesiveSkull.png"
-import Adesivo5 from "./../../assets/img/static/adesiveThermometer.png"
-import Footer from '../../components/Footer/Footer';
-import ProfessionalImg from "../../assets/img/static/professionalImg.png"
+import Professional from "../../../assets/img/static/professionalImgMobile.png"
+import Professional2 from "../../../assets/img/static/professionalImgDesktop.png"
+import Rectangle from "../../../assets/img/static/rectangle-1.png"
+import Rectangle2 from "../../../assets/img/static/rectangle-2.png"
+import Rectangle3 from "../../../assets/img/static/rectangle-3.png"
+import MedicalCard from "../../../components/MedicalCard/MedicalCard";
+import Adesivo from "../../../assets/img/static/adesiveLung.png"
+import Adesivo2 from "../../../assets/img/static/adesiveCross.png"
+import Adesivo3 from "../../../assets/img/static/adesiveBand.png"
+import Adesivo4 from "../../../assets/img/static/adesiveSkull.png"
+import Adesivo5 from "../../../assets/img/static/adesiveThermometer.png"
+import Footer from '../../../components/Footer/Footer';
+import ProfessionalImg from "../../../assets/img/static/professionalImg.png"
 import { useNavigate } from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../../components/NavBar/NavBar';
 
 function ProfessionalPage() {
 
