@@ -20,7 +20,7 @@ function NavBarClient() {
                 <p onClick={() => navigate('/client/home')}>
                     Home
                 </p>
-                <p onClick={() => navigate('/client/home')}>
+                <p onClick={() => navigate('/client/scheduling')}>
                     Agendamentos
                 </p>
                 <p onClick={() => navigate('/client/profile')}>

@@ -22,12 +22,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/client/home" element={<HomeClient/>}/>
+        <Route path="/client/scheduling" element={<Scheduling/>}/>
         <Route path="/client/profile" element={<Profile/>}/>
         <Route path="/client/payments" element={<PaymentPage/>}/>
         <Route path="/client/plans" element={<Plans/>}/>
         <Route path="/stock" element={<Stock/>}/>
-        <Route path="/scheduling" element={<Scheduling/>}/>
-        <Route path="/profile" element={<Profile/>}/>
       </Routes>
     </Router>
   );
