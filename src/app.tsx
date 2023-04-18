@@ -3,6 +3,7 @@ import Home from "./pages/Landing/Home/Home";
 import Doctors from "./pages/Landing/Doctors/Doctors";
 import Services from "./pages/Landing/Services/Services";
 import Login from "./pages/Landing/Login/Login";
+import Register from "./pages/Landing/Register/Register";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/doctors" element={<Doctors/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
       </Routes>
     </Router>
   );
