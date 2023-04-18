@@ -9,7 +9,7 @@ import LungIcon from "../../../assets/stickers/lungIcon.png";
 import CrossIcon from "../../../assets/stickers/crossIcon.png";
 import FirstAidIcon from "../../../assets/stickers/firstAidIcon.png";
 import SkullIcon from "../../../assets/stickers/skullIcon.png";
-import Thermometer from "../../../assets/stickers/thermometerIcon.png";
+import BalanceIcon from "../../../assets/stickers/balanceIcon.png";
 import MedicalCard from "../../../components/MedicalCard/MedicalCard";
 import Footer from '../../../components/Footer/Footer';
 import NavBar from '../../../components/NavBar/NavBar';
@@ -100,7 +100,7 @@ function Doctors() {
             <div className="card-container">
                 <img src={FirstAidIcon} alt="" className='adesivo-3' />
                 <img src={SkullIcon} alt="" className='adesivo-4' />
-                <img src={Thermometer} alt="" className='adesivo-5' />
+                <img src={BalanceIcon} alt="" className='adesivo-5' />
 
                 <MedicalCard
                     src={DoctorImg}
