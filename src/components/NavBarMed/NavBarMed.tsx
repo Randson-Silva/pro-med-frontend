@@ -21,8 +21,8 @@ function NavBarMed() {
 
             <div className="nav-med-login-container-desktop">
                 <p onClick={() => navigate("/")}>Home</p>
-                <p>Consultas</p>
-                <p>Estoque</p>
+                <p onClick={() => navigate("/queries")}>Consultas</p>
+                <p onClick={() => navigate("/stock")}>Estoque</p>
 
                 <img src={IconOut} alt="" className="nav-med-out"/>
             </div>
