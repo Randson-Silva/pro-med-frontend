@@ -1,0 +1,306 @@
+.doctor-home {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(235, 235, 235, 1);
+    overflow: hidden;
+}
+
+.doctor-home-img-container {
+    position: relative;
+    top: -80px;
+    height: 330px;
+    z-index: 2;
+}
+
+.doctor-home-img-desktop {
+    display: none;
+}
+
+.doctor-home-welcome-card {
+    background-color: rgba(235, 235, 235, 0.4);
+    width: 210px;
+    height: 120px;
+    border-radius: 25px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(123, 47, 198, 1);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.doctor-home-welcome-card h1 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.doctor-home-welcome-card span {
+    font-size: 10px;
+}
+
+.doctor-home-welcome-card a {
+    font-size: 8px;
+    font-weight: 600;
+    color: rgba(77, 22, 132, 1);
+}
+
+.doctor-home-queries-text {
+    color: rgba(230, 214, 255, 1);
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.doctor-home-queries-text-white {
+    color: white;
+}
+
+.doctor-home-calendar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.doctor-home-calendar-days-container {
+    width: 260px;
+    height: 170px;
+    background-color: rgba(244, 236, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 30px 30px;
+    overflow-y: scroll;
+}
+
+.doctor-home-data-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 60px 30px 60px 30px;
+    color: rgba(76, 169, 255, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.doctor-home-data {
+    width: 160px;
+    height: 100px;
+    border: 1px solid rgba(76, 169, 255, 0.5);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+.doctor-home-data h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.doctor-home-data span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.doctor-home-calendar-days-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(229, 211, 255, 1);
+    border-radius: 5px;
+}
+
+.doctor-home-calendar-days-container::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 157, 255, 1);
+    border-radius: 10px;
+}
+
+.doctor-home-blur {
+    height: 0;
+}
+
+@media (min-width: 576px) {
+    .doctor-home-img-container {
+        height: 490px;
+    }
+
+    .doctor-home-welcome-card {
+        height: 150px;
+        width: 300px;
+        left: 30px;
+        top: 200px;
+    }
+
+    .doctor-home-welcome-card h1 {
+        font-size: 20px;
+    }
+
+    .doctor-home-welcome-card span {
+        font-size: 13px;
+    }
+
+    .doctor-home-welcome-card a {
+        font-size: 11px;
+    }
+
+    .doctor-home-queries-text {
+        font-size: 17px;
+        top: 480px;
+        left: 80px;
+    }
+    .doctor-home-calendar-days-container {
+        width: 350px;
+        height: 220px;
+    }
+
+    .doctor-home-data {
+        width: 200px;
+        height: 120px;
+        border-radius: 45px;
+    }
+
+    .doctor-home-data h1 {
+        font-size: 33px;
+    }
+    
+    .doctor-home-data span {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 707px) {
+    .doctor-home-img-container {
+        height: 600px;
+    }
+
+    .doctor-home-welcome-card {
+        left: 120px;
+        top: 250px;
+    }
+}
+
+@media (min-width: 825px) {
+    .doctor-home-welcome-card {
+        left: 170px;
+        top: 280px;
+    }
+
+    .doctor-home-queries-text {
+        top: 600px;
+        left: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .doctor-home-img-mobile {
+        display: none;
+    }
+
+    .doctor-home-img-desktop {
+        display: flex;
+    }
+
+    .doctor-home-img-container {
+        height: 700px;
+    }
+
+    .doctor-home-calendar-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .doctor-home-calendar-days-container {
+        border-radius: 0 30px 30px 0px;
+        height: 300px;
+    }
+
+    .doctor-home-welcome-card {
+        width: 500px;
+        height: 240px;
+        left: 70px;
+        top: 200px;
+    }
+
+    .doctor-home-welcome-card h1 {
+        font-size: 40px;
+    }
+
+    .doctor-home-welcome-card span {
+        font-size: 20px;
+    }
+
+    .doctor-home-welcome-card a {
+        font-size: 13px;
+    }
+
+    .doctor-home-queries-text {
+        font-size: 25px;
+        color: white;
+        top: 700px;
+        left: 200px;
+    }
+
+    .doctor-home-queries-text-white {
+        color: rgba(230, 214, 255, 1);
+    }
+
+    .doctor-home-data {
+        height: 160px;
+        width: 210px;
+        border-radius: 30px;
+    }
+
+    .doctor-home-data h1 {
+        font-size: 45px;        
+    }
+
+    .doctor-home-data span {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+    .doctor-home-data-container {
+        margin: 100px 150px 100px 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .doctor-home-img-container {
+        height: 1000px;
+    }
+
+    .doctor-home-welcome-card {
+        left: 200px;
+        top: 300px;
+        height: 300px;
+        width: 600px;
+        border-radius: 30px;
+    }
+
+    .doctor-home-welcome-card h1 {
+        font-size: 50px;
+    }
+
+    .doctor-home-welcome-card span {
+        font-size: 25px;
+    }
+
+    .doctor-home-welcome-card a {
+        font-size: 17px;
+    }
+
+    .doctor-home-queries-text {
+        top: 900px;
+        left: 300px;
+    }
+}

@@ -20,9 +20,9 @@ function NavBarMed() {
             </div>
 
             <div className="nav-med-login-container-desktop">
-                <p onClick={() => navigate("/")}>Home</p>
-                <p onClick={() => navigate("/queries")}>Consultas</p>
-                <p onClick={() => navigate("/stock")}>Estoque</p>
+                <p onClick={() => navigate("/doctor/home")}>Home</p>
+                <p onClick={() => navigate("/doctor/queries")}>Consultas</p>
+                <p onClick={() => navigate("/doctor/stock")}>Estoque</p>
 
                 <img src={IconOut} alt="" className="nav-med-out"/>
             </div>
