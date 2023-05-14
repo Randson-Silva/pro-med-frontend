@@ -1,0 +1,54 @@
+.menu-doctor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(209, 223, 243, 1);
+    height: 50px;
+    width: 285px;
+    border-radius: 20px 0 0 20px;
+    top: 20px;
+    right: -100%;
+    position: absolute;
+    transition: 1s;
+    z-index: 2;
+}
+
+.open-menu-doctor img {
+    width: 40px;
+}
+
+.menu-doctor.active {
+    right: 0;
+    transition: 1s;
+}
+
+.menu-doctor-container ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.menu-doctor-container li {
+    font-size: 14px;
+    color: rgba(158, 99, 255, 1);
+}
+
+.menu-doctor img {
+    width: 12px;
+}
+
+@media(min-width: 576px) {
+
+    .menu-doctor {
+        width: 300px;
+    }
+
+    .menu-doctor img {
+        width: 15px;
+        height: 25px;
+    }
+
+    .menu-doctor-container li {
+        font-size: 15px;
+    }
+}

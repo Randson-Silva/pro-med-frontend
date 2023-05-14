@@ -1,0 +1,54 @@
+.menu-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(209, 223, 243, 1);
+    height: 50px;
+    width: 285px;
+    border-radius: 20px 0 0 20px;
+    top: 20px;
+    right: -100%;
+    position: absolute;
+    transition: 1s;
+    z-index: 2;
+}
+
+.open-menu img {
+    width: 40px;
+}
+
+.menu-component.active {
+    right: 0;
+    transition: 1s;
+}
+
+.menu-component-container ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.menu-component-container li {
+    font-size: 14px;
+    color: rgba(158, 99, 255, 1);
+}
+
+.menu-component img {
+    width: 12px;
+}
+
+@media(min-width: 576px) {
+
+    .menu-component {
+        width: 300px;
+    }
+
+    .menu-component img {
+        width: 15px;
+        height: 25px;
+    }
+
+    .menu-component-container li {
+        font-size: 15px;
+    }
+}
