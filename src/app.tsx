@@ -10,7 +10,8 @@ import Plans from "./pages/Client/Plans/plans";
 import Profile from "./pages/Client/Profile/clientProfile";
 import Stock from "./pages/Doctor/Stock/Stock";
 import Scheduling from "./pages/Client/Scheduling/scheduling";
-import Queries from "./pages/Doctor/Queries/Queries"
+import Queries from "./pages/Doctor/Queries/Queries";
+import DoctorHome from "./pages/Doctor/DoctorHome/DoctorHome"
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
         <Route path="/client/profile" element={<Profile/>}/>
         <Route path="/client/payments" element={<PaymentPage/>}/>
         <Route path="/client/plans" element={<Plans/>}/>
-        <Route path="/stock" element={<Stock/>}/>
-        <Route path="/queries" element={<Queries />}/>
+        <Route path="/doctor/stock" element={<Stock/>}/>
+        <Route path="/doctor/queries" element={<Queries />}/>
+        <Route path="/doctor/home" element={<DoctorHome />}/>
       </Routes>
     </Router>
   );
