@@ -86,12 +86,12 @@ function Register() {
                     />
                     <h1>Cadastre-se</h1>
 
-
-
                     <p>Experimente a tradição de cuidar da saúde da família ProMed!</p>
                 </div>
 
-                <FormControl>
+                <FormControl
+                padding={{md: "0 20px"}}
+                >
                     <div className="register-row-name">
                         <TextField
                             label="Nome Completo"
@@ -210,7 +210,7 @@ function Register() {
                                     fontSize="20px"
                                     background="transparent"
                                     border="none"
-                                    top={{ sm: "26px", lg: "28px" }}
+                                    top={{ sm: "21px", lg: "21px" }}
                                     left="13px"
                                     onClick={handleClick}
                                     _hover={{ border: "none", background: "transparent" }}
@@ -242,7 +242,7 @@ function Register() {
                                     fontSize="20px"
                                     background="transparent"
                                     border="none"
-                                    top={{ sm: "26px", lg: "28px" }}
+                                    top={{ sm: "21px", lg: "21px" }}
                                     left="13px"
                                     onClick={handleClick}
                                     _hover={{ border: "none", background: "transparent" }}
@@ -252,7 +252,7 @@ function Register() {
                             </InputRightElement>
                         </InputGroup>
                     </div>
-
+ 
                     <div className="register-buttom">
 
                         <Button
@@ -261,13 +261,13 @@ function Register() {
                             cursor="pointer"
                             color="#FFFF"
                             border="none"
-                            width={{ sm: "250px", md: "300px" }}
-                            height={{ sm: "50px", md: "60px" }}
+                            width={{ sm: "240px", md: "300px" }}
+                            height={{ sm: "45px", md: "60px" }}
                             fontSize="18px"
                             marginTop="20px"
                             fontWeight="800"
                             borderRadius="15px"
-                            transform="translateY(30px)"
+                            transform="translateY(20px)"
                             position="relative"
                             onClick={() => navigate('/login')}
                         >
@@ -276,8 +276,8 @@ function Register() {
 
                         <Image src={NurseIcon}
                             position="absolute"
-                            width={{ sm: "75px", md: "85px" }}
-                            transform="translate(-130px, 36px)"
+                            width={{ sm: "70px", md: "85px" }}
+                            transform="translate(-120px, 30px)"
                             zIndex="1"
                         />
                     </div>

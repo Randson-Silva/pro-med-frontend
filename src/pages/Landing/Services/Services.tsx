@@ -1,4 +1,4 @@
-import { Button, Box, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import "./styles.css";
 import ImageMobile from "../../../assets/img/static/servicesImageMobile.png"
 import ImageDesktop from "../../../assets/img/static/servicesImageDesktop.png"
@@ -11,7 +11,6 @@ import ServicesRectangleWhite from "../../../assets/img/static/servicesWhiteRect
 import ServicesRectangleBlue from "../../../assets/img/static/servicesBlueRectangle.png"
 import Footer from "../../../components/Footer/Footer"
 import NavBar from "../../../components/NavBar/NavBar"
-
 
 function Services() {
 
@@ -30,13 +29,12 @@ function Services() {
                 </div>
 
                 <div className="services-components-container">
-                    <img src={ImageMobile} alt="" className="services-image-mobile"/>
-                    <img src={ImageDesktop} alt="" className="services-image-desktop"/>
+                    <img src={ImageMobile} alt="" className="services-image-mobile" />
+                    <img src={ImageDesktop} alt="" className="services-image-desktop" />
                     <div className="services-small-card">
                         <ServicesSmallCard
                             title="EXAMES LABORATORIAIS"
                             text="São testes que avaliam o estado de saúde geral do paciente, incluindo análises de sangue, urina e fezes."
-                            
                         />
                     </div>
 
@@ -98,36 +96,36 @@ function Services() {
                         />
                     </div>
 
-                    
+
                 </div>
 
-                <img src={ServicesRectangleWhite} alt="" className="services-rectangle-white"/>
-                <img src={ServicesRectangleBlue} alt="" className="services-rectangle-blue"/>
+                <img src={ServicesRectangleWhite} alt="" className="services-rectangle-white" />
+                <img src={ServicesRectangleBlue} alt="" className="services-rectangle-blue" />
 
-                <img src={RemedyAdesive} alt="" className="services-remedy-adesive"/>
-                <img src={KeyAdesive} alt="" className="services-key-adesive"/>
-                <img src={MicroscopicAdesive} alt="" className="services-microscopic-adesive"/>
+                <img src={RemedyAdesive} alt="" className="services-remedy-adesive" />
+                <img src={KeyAdesive} alt="" className="services-key-adesive" />
+                <img src={MicroscopicAdesive} alt="" className="services-microscopic-adesive" />
 
                 <div className="services-card-container-mobile">
                     <ServicesCard
                         title="RADIOLOGIA"
                         text="São exames de imagem, como raio-x, tomografia e ressonância magnética, que ajudam a visualizar a estrutura interna do corpo para avaliar a presença de lesões ou problemas."
-                        styleButton={{marginTop: 10}}
+                        styleButton={{ marginTop: 10 }}
                     />
-                    <ServicesCard 
+                    <ServicesCard
                         title="TERAPIA"
                         text="São tratamentos que visam recuperar funções corporais, como a fisioterapia que ajuda na reabilitação de lesões musculares e articulares, ou a terapia ocupacional que ajuda na reabilitação de pacientes com problemas neurológicos."
-                        styleButton={{display: "none"}}
+                        styleButton={{ display: "none" }}
                     />
-                    <ServicesCard 
+                    <ServicesCard
                         title="EMERGÊNCIAS MÉDICAS"
                         text="São tratamentos que visam recuperar funções corporais, como a fisioterapia que ajuda na reabilitação de lesões musculares e articulares, ou a terapia ocupacional que ajuda na reabilitação de pacientes com problemas neurológicos."
-                        styleButton={{display: "none"}}
+                        styleButton={{ display: "none" }}
                     />
                     <ServicesCard
                         title="VACINAÇÃO"
                         text="São injeções que visam prevenir doenças infecciosas e imunizar o paciente."
-                        styleButton={{display: "none"}}
+                        styleButton={{ display: "none" }}
                     />
                 </div>
 
@@ -136,101 +134,101 @@ function Services() {
                     <ServicesCard
                         title=""
                         text=""
-                        style={{backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid"}}
-                        styleButton={{display: "none"}}
+                        style={{ backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid" }}
+                        styleButton={{ display: "none" }}
                     />
                     <ServicesCard
                         title="EXAMES LABORATORIAIS"
                         text="São testes que avaliam o estado de saúde geral do paciente, incluindo análises de sangue, urina e fezes."
-                        styleButton={{marginTop: 10}}
+                        styleButton={{ marginTop: 10 }}
                     />
                     <ServicesCard
                         title=""
                         text=""
-                        style={{backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid"}}
-                        styleButton={{display: "none"}}
+                        style={{ backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid" }}
+                        styleButton={{ display: "none" }}
                     />
                     <ServicesCard
                         title="RADIOLOGIA"
                         text="São exames de imagem, como raio-x, tomografia e ressonância magnética, que ajudam a visualizar a estrutura interna do corpo para avaliar a presença de lesões ou problemas."
-                        styleButton={{marginTop: 0}}
+                        styleButton={{ marginTop: 0 }}
                     />
                     <ServicesCard
                         title="CIRURGIAS AMBULATORIAS"
                         text="São cirurgias realizadas no mesmo dia da consulta, sem necessidade de internação hospitalar."
-                        styleButton={{marginTop: 20}}
+                        styleButton={{ marginTop: 20 }}
                     />
                     <ServicesCard
                         title="TERAPIAS"
                         text="São tratamentos que visam recuperar funções corporais, como a fisioterapia que ajuda na reabilitação de lesões musculares e articulares, ou a terapia ocupacional que ajuda na reabilitação de pacientes com problemas neurológicos."
-                        styleButton={{marginTop: -10}}
+                        styleButton={{ marginTop: -10 }}
                     />
                     <ServicesCard
                         title="EMERGÊNCIAS MÉDICAS"
                         text="São serviços de emergência disponibilizados pela clínica que visam atender pacientes com condições graves que necessitam de atendimento imediato."
-                        styleButton={{marginTop: 0}}
+                        styleButton={{ marginTop: 0 }}
                     />
                     <ServicesCard
                         title="VACINAÇÃO"
                         text="São injeções que visam prevenir doenças infecciosas e imunizar o paciente."
-                        styleButton={{marginTop: 20}}
+                        styleButton={{ marginTop: 20 }}
                     />
-                    
+
                 </div>
 
                 <div className="services-card-container-desktop-1280">
                     <ServicesCard
                         title=""
                         text=""
-                        style={{backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid"}}
-                        styleButton={{display: "none"}}
+                        style={{ backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid" }}
+                        styleButton={{ display: "none" }}
                     />
                     <ServicesCard
                         title="EXAMES LABORATORIAIS"
                         text="São testes que avaliam o estado de saúde geral do paciente, incluindo análises de sangue, urina e fezes."
-                        styleButton={{marginTop: 40}}
+                        styleButton={{ marginTop: 40 }}
                     />
                     <ServicesCard
                         title=""
                         text=""
-                        style={{backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid"}}
-                        styleButton={{display: "none"}}
+                        style={{ backgroundColor: "rgb(0, 0, 0, 0)", border: "rgba(0, 0, 0, 0) 0.5px solid" }}
+                        styleButton={{ display: "none" }}
                     />
                     <ServicesCard
                         title="RADIOLOGIA"
                         text="São exames de imagem, como raio-x, tomografia e ressonância magnética, que ajudam a visualizar a estrutura interna do corpo para avaliar a presença de lesões ou problemas."
-                        styleButton={{marginTop: 0}}
+                        styleButton={{ marginTop: 0 }}
                     />
                     <ServicesCard
                         title="CIRURGIAS AMBULATORIAS"
                         text="São cirurgias realizadas no mesmo dia da consulta, sem necessidade de internação hospitalar."
-                        styleButton={{marginTop: 40}}
+                        styleButton={{ marginTop: 40 }}
                     />
                     <ServicesCard
                         title="TERAPIAS"
                         text="São tratamentos que visam recuperar funções corporais, como a fisioterapia que ajuda na reabilitação de lesões musculares e articulares, ou a terapia ocupacional que ajuda na reabilitação de pacientes com problemas neurológicos."
-                        styleButton={{marginTop: -20}}
+                        styleButton={{ marginTop: -20 }}
                     />
                     <ServicesCard
                         title="EMERGÊNCIAS MÉDICAS"
                         text="São serviços de emergência disponibilizados pela clínica que visam atender pacientes com condições graves que necessitam de atendimento imediato."
-                        styleButton={{marginTop: 20}}
+                        styleButton={{ marginTop: 20 }}
                     />
                     <ServicesCard
                         title="VACINAÇÃO"
                         text="São injeções que visam prevenir doenças infecciosas e imunizar o paciente."
-                        styleButton={{marginTop: 60}}
+                        styleButton={{ marginTop: 60 }}
                     />
-                    
+
                 </div>
 
-                
+
                 <Footer />
-                
+
             </div>
         </>
     );
-    
+
 }
 
 export default Services;

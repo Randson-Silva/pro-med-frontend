@@ -1,11 +1,9 @@
-import { Button, Box, Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import MenuIcon from "../../../assets/img/static/menuIcon.png"
 import PurpleComponentMobile from "../../../assets/img/static/purpleComponentMobile.png"
 import PurpleComponentDesktop from "../../../assets/img/static/purpleComponentDesktop.png"
 import MedicalComponentMobile from "../../../assets/img/static/medicalComponentMobile.png"
 import MedicalComponentDesktop from "../../../assets/img/static/medicalComponentDesktop.png"
-import Logo from "../../../assets/img/static/logo.png"
 import HeartIcon from "../../../assets/img/static/heartIcon.png"
 import BrainIcon from "../../../assets/img/static/brainIcon.png"
 import BoneIcon from "../../../assets/img/static/boneIcon.png"
@@ -20,68 +18,15 @@ import NurseIcon from "../../../assets/img/static/nurseIcon.png"
 import Footer from "../../../components/Footer/Footer";
 import SpecializationCard from "../../../components/SpecializationCard/SpacializationCard"
 import "./styles.css"
+import NavBar from "../../../components/NavBar/NavBar";
 
 function Home() {
     const navigate = useNavigate()
 
+
     return (
         <div className="home-page">
-            <nav>
-                <div className="home-logo-container">
-                    <img src={Logo} alt="" />
-                </div>
-
-                <div className="home-login-container">
-                    <Button
-                        onClick={() => navigate("/login")}
-                        width={{ sm: "115px", md: "120px" }}
-                        height="38px"
-                        borderRadius="36px"
-                        zIndex="2"
-                        background="rgba(205, 206, 243, 1)"
-                        color="rgba(158, 99, 255, 1)"
-                        borderColor="rgba(95, 0, 189, 0.94) rgba(77, 0, 154, 0)"
-                        border="1px"
-                        cursor="pointer"
-                        _hover={{ background: "rgba(205, 206, 243, 1)" }}
-                    >
-                        LOGIN
-                    </Button>
-
-                    <img src={MenuIcon} alt="" />
-                </div>
-
-                <div className="home-login-container-desktop">
-                    <p onClick={() => navigate('/')} >
-                        Home
-                    </p>
-
-                    <p onClick={() => navigate('/doctors')} >
-                        Médicos
-                    </p>
-
-                    <p onClick={() => navigate('/services')} >
-                        Serviços
-                    </p>
-
-                    <Button
-                        onClick={() => navigate('/login')}
-                        width={{ sm: "115px", md: "120px" }}
-                        height="38px"
-                        borderRadius="36px"
-                        background="rgba(205, 206, 243, 1)"
-                        color="rgba(158, 99, 255, 1)"
-                        borderColor="rgba(95, 0, 189, 0.94)
-                        rgba(77, 0, 154, 0)"
-                        border="1px"
-                        cursor="pointer"
-                        _hover={{ background: "rgba(205, 206, 243, 1)" }}
-                    >
-                        LOGIN
-                    </Button>
-                </div>
-            </nav >
-
+            <NavBar />
             <div className="home-components-container">
                 <Box
                     boxSize='250px'
@@ -125,7 +70,6 @@ function Home() {
                     filter='auto'
                     blur='80px'
                     position="relative"
-                    zIndex={1}
                     width={{ sm: "165px", md: "300px", lg: "400px" }}
                     height={{ sm: "400px", md: "500px" }}
                     bottom={{ sm: "-300px", md: "-570px", lg: "700px" }}
@@ -154,7 +98,7 @@ function Home() {
                     filter='auto'
                     blur='80px'
                     position="relative"
-                    zIndex={1}
+                    zIndex={0.5}
                     width={{ sm: "170px", md: "300px", lg: "500px" }}
                     height={{ sm: "400px", md: "500px" }}
                     bottom={{ sm: "-170px", md: "-400px", lg: "1250px" }}
@@ -209,8 +153,7 @@ function Home() {
                 <SpecializationCard
                     style={{ color: "rgba(76, 169, 255, 0.8)" }}
                     title="Neorologia"
-                    text="Neurologia
-                Especialidade médica que se dedica ao estudo e tratamento do sistema nervoso, incluindo o cérebro, medula espinhal e nervos periféricos."
+                    text="Especialidade médica que se dedica ao estudo e tratamento do sistema nervoso, incluindo o cérebro, medula espinhal e nervos periféricos."
                     src={BrainIcon}
                 />
                 <SpecializationCard
