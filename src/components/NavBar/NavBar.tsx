@@ -1,9 +1,9 @@
 import { Button } from "@chakra-ui/react"
-import { CSSProperties } from "react"
-import { useNavigate } from "react-router-dom"
+import { CSSProperties, useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 import Logo from "../../assets/img/static/logo.png"
-import MenuIcon from "../../assets/img/static/menuIcon.png"
 import "./styles.css"
+import Menu from "../Menu/Menu"
 
 function NavBar(props: {
     style?: CSSProperties
@@ -11,6 +11,7 @@ function NavBar(props: {
 }) {
 
     const navigate = useNavigate()
+
     return (
         <nav>
             <div className="nav-logo-container">
@@ -32,12 +33,11 @@ function NavBar(props: {
                     border="1px"
                     cursor="pointer"
                     _hover={{ background: "rgba(205, 206, 243, 1)" }}
-
                 >
                     LOGIN
                 </Button>
 
-                <img src={MenuIcon} alt="" />
+                <Menu />
             </div>
 
             <div className="nav-login-container-desktop">

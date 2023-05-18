@@ -1,0 +1,42 @@
+import { useState } from "react";
+import menuClose from "../../assets/img/static/menuClose.png"
+import { useNavigate } from "react-router-dom";
+import MenuIcon from "../../assets/img/static/menuIcon.png"
+import "./styles.css"
+import { ArrowRightIcon } from "@chakra-ui/icons";
+
+function menuClient() {
+    const navigate = useNavigate()
+
+    const [menu, setMenu] = useState(false)
+    const showMenu = () => setMenu(!menu)
+
+    return (
+        <>
+            <div className="open-menu-client">
+                <img src={MenuIcon} onClick={showMenu} />
+            </div>
+
+            <div className={menu ? 'menu-client-component active' : 'menu-client-component'}>
+
+                <div className="menu-client-container">
+                    <ul>
+                        <li onClick={() => navigate('/client/home')}>Home</li>
+                        <li onClick={() => navigate('/client/scheduling')}>Agendamentos</li>
+                        <li onClick={() => navigate('/client/profile')}>Perfil</li>
+                        <li onClick={() => navigate('/client/payments')}>Pagamentos</li>
+                        <li onClick={() => navigate('/client/plans')}>Planos</li>
+                        <div className="meu-client-icon">
+                            <ArrowRightIcon width={"13px"} color="rgba(158, 99, 255, 1)" />
+                            <li onClick={showMenu}>Log Off</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+
+        </>
+    );
+}
+
+export default menuClient;

@@ -26,10 +26,6 @@ nav {
     gap: 10px;
 }
 
-.nav-login-container img {
-    width: 35px;
-}
-
 .nav-login-container-desktop {
     display: none;
 }
