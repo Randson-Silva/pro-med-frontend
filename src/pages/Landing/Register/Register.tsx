@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles.css";
+import React, { useState } from "react";
 import MicroscopeIcon from "../../../assets/img/static/microscopeIcon.png"
 import NurseIcon from "../../../assets/img/static/nurseIcon.png"
 import BandAidIcon from "../../../assets/img/static/bandAidIcon.png"
@@ -8,14 +7,68 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import CloseButton from "../../../components/CloseButton/CloseButton";
 import TextField from "../../../components/TextFIeld/TextField";
 import { useNavigate } from "react-router-dom";
+import { useApi } from "../../../hooks/useApi";
+import { IRegisterUser } from "../../../@types/api/requests.types";
+import "./styles.css";
+import Loading from "../../Loading/Loading";
 
 function Register() {
-    const [show, setShow] = React.useState(false)
-    const handleClick = () => setShow(!show)
+    const [fullName, setFullName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [birthDate, setBirthDate] = useState<string>("");
+    const [cpf, setCpf] = useState<string>("");
+    const [rg, setRg] = useState<string>("");
+    const [phoneNumber, setPhoneNumber] = useState<string>("");
+    const [gender, setGender] = useState<string>("");
+    const [state, setState] = useState<string>("");
+    const [city, setCity] = useState<string>("");
+    const [street, setStreet] = useState<string>("");
+    const [neighborhood, setNeighborhood] = useState<string>("");
+    const [houseNumber, setHouseNumber] = useState<number | null>(null);
+    const [password, setPassword] = useState<string>("");
+    const [repeatPassword, setRepeatPassword] = useState<string>("");
+
+    const [show, setShow] = React.useState(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    
     const navigate = useNavigate()
+    const { register } = useApi();
+
+    const handleClick = () => setShow(!show)
+
+    async function handleRegister() {
+        if (!houseNumber) return alert('Informe o número dao endereço.');
+
+        if (password != repeatPassword) return alert('As senhas não correspondem.');
+
+        const userToRegister: IRegisterUser = {
+            fullName, 
+            email, 
+            birthDate, 
+            cpf, 
+            rg, 
+            address: {
+                state, city, street, neighborhood, houseNumber
+            }, 
+            phoneNumber, 
+            gender, 
+            password, 
+            repeatPassword
+        };
+
+        try {
+            setIsLoading(true);
+            await register(userToRegister);
+            navigate('/login');
+        } catch (error) {
+            alert(error);
+            setIsLoading(false);
+        }
+    }
 
     return (
         <div className="register-page">
+            {isLoading && <Loading />}
 
             <Box
                 boxSize='250px'
@@ -98,6 +151,7 @@ function Register() {
                             placeholder="Nome Completo"
                             type="text"
                             className="oie"
+                            setState={setFullName}
                         />
                     </div>
                     <div className="register-row-email">
@@ -106,6 +160,7 @@ function Register() {
                             label="Email"
                             placeholder="Email"
                             type="email"
+                            setState={setEmail}
                         />
                     </div>
 
@@ -114,6 +169,7 @@ function Register() {
                             label="Data de nascimento"
                             placeholder="00/00/0000"
                             type="text"
+                            setState={setBirthDate}
                         />
                     </div>
                     <div className="register-row-cpf">
@@ -121,6 +177,7 @@ function Register() {
                             label="CPF"
                             placeholder="000.000.000-00"
                             type="text"
+                            setState={setCpf}
                         />
                     </div>
 
@@ -130,6 +187,7 @@ function Register() {
                             label="RG"
                             placeholder="000000000"
                             type="text"
+                            setState={setRg}
                         />
                     </div>
 
@@ -138,6 +196,7 @@ function Register() {
                             label="Contato"
                             placeholder="-99 99999 9999"
                             type="text"
+                            setState={setPhoneNumber}
                         />
                     </div>
 
@@ -146,6 +205,7 @@ function Register() {
                             label="Gênero"
                             placeholder="Indefinido"
                             type="text"
+                            setState={setGender}
                         />
                     </div>
 
@@ -154,6 +214,7 @@ function Register() {
                             label="Estado"
                             placeholder="AC"
                             type="text"
+                            setState={setState}
                         />
                     </div>
 
@@ -162,6 +223,7 @@ function Register() {
                             label="Cidade"
                             placeholder="Cidade"
                             type="text"
+                            setState={setCity}
                         />
                     </div>
 
@@ -170,6 +232,7 @@ function Register() {
                             label="Bairro"
                             placeholder="Bairro"
                             type="text"
+                            setState={setNeighborhood}
                         />
                     </div>
 
@@ -178,6 +241,7 @@ function Register() {
                             label="Rua/Avenida"
                             placeholder="Rua/Avenida"
                             type="text"
+                            setState={setStreet}
                         />
                     </div>
 
@@ -186,6 +250,7 @@ function Register() {
                             label="Número"
                             placeholder="00"
                             type="text"
+                            setState={setHouseNumber}
                         />
                     </div>
 
@@ -201,6 +266,7 @@ function Register() {
                                     placeholder="Senha"
                                     label="Senha"
                                     type={show ? 'text' : 'password'}
+                                    setState={setPassword}
                                 />
                             </Flex>
 
@@ -233,6 +299,7 @@ function Register() {
                                     placeholder="Repita sua senha"
                                     label="Repita sua senha"
                                     type={show ? 'text' : 'password'}
+                                    setState={setRepeatPassword}
                                 />
                             </Flex>
 
@@ -269,7 +336,7 @@ function Register() {
                             borderRadius="15px"
                             transform="translateY(20px)"
                             position="relative"
-                            onClick={() => navigate('/login')}
+                            onClick={handleRegister}
                         >
                             Tudo pronto!
                         </Button>
