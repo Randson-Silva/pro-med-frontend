@@ -1,20 +1,41 @@
-import { FormControl, Text, Input, InputGroup, InputRightElement, Button, FormLabel, Flex, Box, Image, Icon } from "@chakra-ui/react";
+import { FormControl, Text, InputGroup, InputRightElement, Button, Flex, Box, Image, Icon } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import { useNavigate } from "react-router-dom";
+import { ProfileContext } from "../../../context/ProfileContext";
 import ChairIcon from "../../../assets/img/static/chairIcon.png"
 import MascIcon from "../../../assets/img/static/mascIcon.png"
-import React from "react";
+import { useContext, useState } from "react";
 import TextField from "../../../components/TextFIeld/TextField";
+import Loading from "../../Loading/Loading";
 import "./styles.css"
 
 function Login() {
-    const [show, setShow] = React.useState(false)
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [show, setShow] = useState(false)
     const handleClick = () => setShow(!show)
     const navigate = useNavigate()
+    
+    const { isAuthenticated, user, handleLogin, handleLogout } = useContext(ProfileContext);
+
+    async function login() {
+        try {
+            setIsLoading(true);
+            await handleLogin(email, password);
+        } 
+        finally {
+            setIsLoading(false);
+        }
+    }
+
+    if (isAuthenticated) navigate(`/${user!.role.toLowerCase()}/home`);
 
     return (
         <>
             <div className="login-page">
+                {isLoading && <Loading />}
+
                 <Box
                     boxSize='250px'
                     background="rgba(203, 220, 244, 1)"
@@ -144,9 +165,11 @@ function Login() {
                         >
                             <TextField
                                 style={{ textAlign: "left" }}
-                                placeholder="Email ou CPF"
+                                placeholder="Email"
                                 type="text"
                                 label="Login"
+                                setState={setEmail}
+
                             />
                         </Flex> 
 
@@ -162,6 +185,7 @@ function Login() {
                                     placeholder="Senha"
                                     label="Senha"
                                     type={show ? 'text' : 'password'}
+                                    setState={setPassword}
                                 />
                             </Flex>
 
@@ -196,7 +220,7 @@ function Login() {
                                 marginTop="20px"
                                 fontWeight="800"
                                 borderRadius="15px"
-                                onClick={() => navigate('/client/home')}
+                                onClick={login}
                             >
                                 LOGIN
                             </Button>

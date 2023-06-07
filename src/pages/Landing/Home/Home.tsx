@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ProfileContext } from "../../../context/ProfileContext";
 import { Box, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import PurpleComponentMobile from "../../../assets/img/static/purpleComponentMobile.png"
@@ -22,7 +24,10 @@ import NavBar from "../../../components/NavBar/NavBar";
 
 function Home() {
     const navigate = useNavigate()
+    
+    const { isAuthenticated, user } = useContext(ProfileContext);
 
+    if (isAuthenticated) navigate(`/${user!.role.toLowerCase()}/home`);
 
     return (
         <div className="home-page">
