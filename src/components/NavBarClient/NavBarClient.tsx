@@ -1,11 +1,14 @@
+import { useContext } from "react";
 import Logo from "../../assets/img/static/logo.png";
-import MenuIcon from "../../assets/img/static/menuIcon.png";
 import { useNavigate } from "react-router-dom";
-import './styles.css';
 import MenuClient from "../menuClient/menuClient"
+import { ArrowRightIcon } from "@chakra-ui/icons";
+import { ProfileContext } from "../../context/ProfileContext";
+import './styles.css';
 
 function NavBarClient() {
     const navigate = useNavigate();
+    const { handleLogout } = useContext(ProfileContext);
 
     return (
         <nav>
@@ -32,7 +35,13 @@ function NavBarClient() {
                 <p onClick={() => navigate('/client/plans')}>
                     Plano
                 </p>
+                <div className="meu-client-icon">
+                    <p onClick={handleLogout}>
+                        Sair
+                    </p>
 
+                    <ArrowRightIcon width={"13px"} color="rgba(158, 99, 255, 1)" />
+                </div>
             </div>
         </nav>
     );

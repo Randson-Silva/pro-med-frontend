@@ -1,12 +1,13 @@
-import { useState } from "react";
-import menuClose from "../../assets/img/static/menuClose.png"
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import MenuIcon from "../../assets/img/static/menuIcon.png"
-import "./styles.css"
 import { ArrowRightIcon } from "@chakra-ui/icons";
+import { ProfileContext } from "../../context/ProfileContext";
+import "./styles.css"
 
 function menuClient() {
     const navigate = useNavigate()
+    const { handleLogout } = useContext(ProfileContext);
 
     const [menu, setMenu] = useState(false)
     const showMenu = () => setMenu(!menu)
@@ -28,7 +29,7 @@ function menuClient() {
                         <li onClick={() => navigate('/client/plans')}>Planos</li>
                         <div className="meu-client-icon">
                             <ArrowRightIcon width={"13px"} color="rgba(158, 99, 255, 1)" />
-                            <li onClick={showMenu}>Log Off</li>
+                            <li onClick={handleLogout}>Sair</li>
                         </div>
                     </ul>
                 </div>
