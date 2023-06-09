@@ -1,4 +1,4 @@
-export interface IUserProfile {
+export interface IClientProfile {
   id: string;
   fullName: string;
   email: string;
@@ -15,16 +15,7 @@ export interface IUserProfile {
     neighborhood: string;
     houseNumber: number;
   };
-  role: string;
-}
-
-export interface IUserCredentials {
-  accessToken: string;
-  refreshToken: string;
-  profile: IUserProfile;
-}
-
-export interface IJWT {
-  accessToken: string;
-  refreshToken: string;
+  photo: string;
+  medicalHistoric: object;
+  appointments: [];
 }

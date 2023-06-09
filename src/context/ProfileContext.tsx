@@ -1,4 +1,4 @@
-import { IJWT, IUserCredentials, IUserProfile } from '../@types/global/profile.types';
+import { IJWT, IUserCredentials, IUserProfile } from '../@types/global/user.types';
 import React, { createContext, useEffect, useState } from 'react';
 import { useApi } from '../hooks/useApi';
 
