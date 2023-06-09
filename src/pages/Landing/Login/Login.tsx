@@ -167,9 +167,8 @@ function Login() {
                                 style={{ textAlign: "left" }}
                                 placeholder="Email"
                                 type="text"
-                                label="Login"
+                                label="Email"
                                 setState={setEmail}
-
                             />
                         </Flex> 
 
