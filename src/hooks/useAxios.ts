@@ -18,9 +18,8 @@ export const useAxios = () => {
     // handling token refreshing
     axiosInstance.interceptors.response.use(res => res, async (error) => {
         const originalRequest = error.config;
-        const checkExpiredToken = error.response.data.message?.includes('JWT expired');
 
-        if (checkExpiredToken && !originalRequest._retry) {
+        if (!originalRequest._retry) {
             originalRequest._retry = true;
 
             try {
