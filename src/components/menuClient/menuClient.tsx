@@ -29,7 +29,13 @@ function menuClient() {
                         <li onClick={() => navigate('/client/plans')}>Planos</li>
                         <div className="meu-client-icon">
                             <ArrowRightIcon width={"13px"} color="rgba(158, 99, 255, 1)" />
-                            <li onClick={handleLogout}>Sair</li>
+                            
+                            <li onClick={() => {
+                                handleLogout();
+                                navigate('/');
+                            }}>
+                                Sair
+                            </li>
                         </div>
                     </ul>
                 </div>

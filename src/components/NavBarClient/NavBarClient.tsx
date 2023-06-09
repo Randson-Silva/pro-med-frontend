@@ -36,7 +36,10 @@ function NavBarClient() {
                     Plano
                 </p>
                 <div className="meu-client-icon">
-                    <p onClick={handleLogout}>
+                    <p onClick={() => {
+                        handleLogout();
+                        navigate('/');
+                    }}>
                         Sair
                     </p>
 
