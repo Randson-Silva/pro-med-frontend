@@ -164,6 +164,7 @@ function Login() {
                             flexDirection="column"
                         >
                             <TextField
+                                value={email}
                                 style={{ textAlign: "left" }}
                                 placeholder="Email"
                                 type="text"
@@ -180,6 +181,7 @@ function Login() {
                             <Flex flexDirection="column">
 
                                 <TextField
+                                    value={password}
                                     style={{ textAlign: "left" }}
                                     placeholder="Senha"
                                     label="Senha"

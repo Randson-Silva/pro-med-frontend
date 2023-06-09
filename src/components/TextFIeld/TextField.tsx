@@ -7,7 +7,8 @@ function TextField(props: {
     type?: string
     className?: string
     style?: CSSProperties
-    setState: Function
+    value?: string | number
+    setState?: Function
     id? : string
 }) {
     return (
@@ -28,6 +29,7 @@ function TextField(props: {
                 id={props.id || undefined}
                 style={props.style ? props.style : { textAlign: "center" }}
                 type={props.type}
+                value={props.value || ""}
                 className={props.className}
                 placeholder={props.placeholder}
                 _placeholder={{ color: "rgba(158, 99, 255, 0.5)", fontSize: "10px" }}
@@ -39,7 +41,9 @@ function TextField(props: {
                 borderRadius="15px"
                 _focusVisible={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
                 _hover={{ border: "rgba(123, 47, 198, 1) 2px solid" }}
-                onChange={(event => props.setState(event.target.value))}
+                onChange={(event => {
+                    if (props.setState) props.setState(event.target.value);
+                })}
             />
         </div>
     )
