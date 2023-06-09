@@ -9,10 +9,11 @@ import TextField from "../../../components/TextFIeld/TextField";
 import { useNavigate } from "react-router-dom";
 import { useApi } from "../../../hooks/useApi";
 import { IRegisterUser } from "../../../@types/api/requests.types";
-import "./styles.css";
 import Loading from "../../Loading/Loading";
+import "./styles.css";
 
 function Register() {
+    // form state fields
     const [fullName, setFullName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [birthDate, setBirthDate] = useState<string>("");
@@ -28,18 +29,22 @@ function Register() {
     const [password, setPassword] = useState<string>("");
     const [repeatPassword, setRepeatPassword] = useState<string>("");
 
+    // rendering states
     const [show, setShow] = React.useState(false);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const { register } = useApi();
 
     const handleClick = () => setShow(!show)
 
     async function handleRegister() {
-        if (!houseNumber) return alert('Informe o número dao endereço.');
+        if (!houseNumber) return alert('Informe o número do endereço.');
 
         if (password != repeatPassword) return alert('As senhas não correspondem.');
+
+        if (gender.toLowerCase() != 'masculino' && gender.toLowerCase() != 'feminino')
+            return alert('Informe um gênero válido.');
 
         const userToRegister: IRegisterUser = {
             fullName, 
@@ -60,7 +65,8 @@ function Register() {
             setIsLoading(true);
             await register(userToRegister);
             navigate('/login');
-        } catch (error) {
+        } 
+        catch (error) {
             alert(error);
             setIsLoading(false);
         }
