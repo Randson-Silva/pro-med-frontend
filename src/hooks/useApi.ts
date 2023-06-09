@@ -1,5 +1,6 @@
 import { IRegisterUser } from "../@types/api/requests.types";
-import { IUserCredentials, IUserProfile } from "../@types/global/profile.types";
+import { IClientProfile } from "../@types/global/client.types";
+import { IUserCredentials, IUserProfile } from "../@types/global/user.types";
 import { useAxios } from "./useAxios";
 
 export function useApi() {
@@ -15,6 +16,10 @@ export function useApi() {
         email,
         password,
       });
+      return res.data;
+    },
+    getClientProfile: async () => {
+      const res = await axios.get<IClientProfile>("/user/clients/profile");
       return res.data;
     }
   };

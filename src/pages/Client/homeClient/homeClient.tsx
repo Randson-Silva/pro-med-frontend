@@ -1,19 +1,40 @@
-import Logo from "../../../assets/img/static/logo.png"
-import MenuIcon from "../../../assets/img/static/menuIcon.png"
+import { useContext, useEffect, useState } from "react";
 import MedicalImg from "../../../assets/img/static/homeClientMedical.png"
 import MedicalImgDesktop from "../../../assets/img/static/homeClientMedicalDesktop.png"
 import Body from "../../../assets/img/static/bodyIcon.png"
 import Heart from "../../../assets/img/static/whiteHeartIcon.png"
 import Dollar from "../../../assets/img/static/dollarIcon.png"
 import Medical from "../../../assets/img/static/medicalIcon.png"
-import MenuClose from "../../../assets/img/static/menuClose.png"
-import "./styles.css"
 import Footer from "../../../components/Footer/Footer"
 import { Box } from "@chakra-ui/react"
 import { InfoIcon } from "@chakra-ui/icons"
 import NavBarClient from "../../../components/NavBarClient/NavBarClient"
+import { ProfileContext } from "../../../context/ProfileContext";
+import { useNavigate } from "react-router-dom";
+import { useApi } from "../../../hooks/useApi";
+import { IClientProfile } from "../../../@types/global/client.types";
+import "./styles.css"
 
 function homeClient() {
+    const [clientProfile, setClientProfile] = useState<IClientProfile | null>(null);
+    const { isAuthenticated, user } = useContext(ProfileContext);
+    const navigate = useNavigate();
+    const { getClientProfile } = useApi();
+
+    function getUserFirtsName() {
+        return user!.fullName.split(' ')[0];
+    }
+
+    function isToRenderHistoricEmptyMessage() {
+        return (clientProfile && !clientProfile.medicalHistoric);
+    }
+
+    useEffect(() => {
+        (async () => setClientProfile(await getClientProfile()))();
+    }, []);
+
+    if (!isAuthenticated) return navigate('/');
+
     return (
         <div className="home-client-page">
             <Box
@@ -92,7 +113,7 @@ function homeClient() {
                 position="absolute"
                 zIndex={{ sm: "2", lg: "3" }}
                 width={{ sm: "230px", lg: "300px" }}
-                height={{ sm: "260px", lg: "400px" }}
+                height={{ sm: "260px", lg: "280px" }}
                 bottom={{ sm: "0", lg: "-260px", xl: "-340px" }}
                 right={{ sm: "0", xl: "140px" }}
                 borderRadius="50px"
@@ -101,19 +122,23 @@ function homeClient() {
             <NavBarClient />
 
             <div className="home-client-historic">
-                <h1>Olá Dimitry!</h1>
+                <h1>Olá {getUserFirtsName()}</h1>
 
+                {isToRenderHistoricEmptyMessage() && (
+                    <div 
+                        className="home-client-historic-container"
+                        onClick={() => navigate('/client/profile')}
+                    >
+                        <InfoIcon
+                            color="rgba(158, 99, 255, 1)"
+                        />
 
-                <div className="home-client-historic-container">
-                    <InfoIcon
-                        color="rgba(158, 99, 255, 1)"
-                    />
-
-                    <p>Você ainda não preencheu seu histórico
-                        <br />
-                        <span>Clique aqui para preenche-lo!</span>
-                    </p>
-                </div>
+                        <p>Você ainda não preencheu seu histórico
+                            <br />
+                            <span>Clique aqui para preenchê-lo!</span>
+                        </p>
+                    </div>
+                )}
             </div>
 
             <div className="home-client-img-mobile">
