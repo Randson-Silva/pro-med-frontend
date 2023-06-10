@@ -5,7 +5,7 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 345px;
 }
 
@@ -27,29 +27,47 @@
     font-weight: 500;
 }
 
-.calendar-column td {
-    text-align: center;
-    width: 53.5px;
-    height: 30px;
+.calendar-columns {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
-.calendar-column thead {
+.calendar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgba(123, 47, 198, 1);
     font-size: 13px;
     font-weight: 800;
+    margin-bottom: 12px;
 }
 
-.calendar-column tbody {
+.calendar-column-days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: rgba(123, 47, 198, 1);
     font-size: 12px;
     font-weight: 500;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.down {
+    justify-content: space-between;
 }
 
 @media(min-width: 576px) {
     .calendar {
         width: 450px;
         padding: 30px 20px 30px 20px;
-
     }
 
     .calendar-header h1 {
@@ -60,9 +78,8 @@
         font-size: 30px;
     }
 
-    .calendar-column td {
+    .calendar-column-days {
         font-size: 13px;
-        width: 64.2px;
     }
 }
 
@@ -84,12 +101,14 @@
         font-size: 35px;
     }
 
-    .calendar-column td {
+    .calendar-column-header {
         font-size: 15px;
-        width: 68.5px;
+        margin-bottom: 18px;
     }
 
-    .calendar-column tbody td {
-        padding: 9px 0;
+    .calendar-column-days {
+        font-size: 16px;
+        font-weight: 400;
+        gap: 18px;
     }
 }

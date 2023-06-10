@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.css"
+import "./styles.css";
 
 function Calendar() {
     const [month, setMonth] = useState(new Date().getMonth())
@@ -24,43 +24,50 @@ function Calendar() {
 
         return [
             {
-                name: 'sundays',
+                name: 'Dom',
+                weekDayIndex: 0,
                 days: monthDays.filter(date => date.getDay() === 0),
             },
             {
-                name: "mondays",
+                name: "Seg",
+                weekDayIndex: 1,
                 days: monthDays.filter(date => date.getDay() === 1),
 
             },
             {
-                name: "tuesdays",
+                name: "Ter",
+                weekDayIndex: 2,
                 days: monthDays.filter(date => date.getDay() === 2),
 
             },
             {
-                name: "wednesdays",
+                name: "Quar",
+                weekDayIndex: 3,
                 days: monthDays.filter(date => date.getDay() === 3),
 
             },
             {
-                name: "thursdays",
+                name: "Qui",
+                weekDayIndex: 4,
                 days: monthDays.filter(date => date.getDay() === 4),
 
             },
             {
-                name: "fridays",
+                name: "Sex",
+                weekDayIndex: 5,
                 days: monthDays.filter(date => date.getDay() === 5),
 
             },
             {
-                name: "saturdays",
+                name: "Sáb",
+                weekDayIndex: 6,
                 days: monthDays.filter(date => date.getDay() === 6),
 
             }
         ]
     }
 
-    const monthDaysByWeekDay = getMonthDaysByWeekDay();
+    const monthFirstDay = new Date(year, month, 1).getDay();
 
     return (
         <div className="calendar">
@@ -68,82 +75,25 @@ function Calendar() {
                 <h1>{monthNames.at(month)?.toUpperCase()}</h1>
                 <h2>{year}</h2>
             </div>
-            {/* 
+            
             <div className="calendar-columns">
-                {monthDaysByWeekDay.map(column => {
-                    const columnValues = [column.name, column.days.map(date => date.getDate())];
+                {getMonthDaysByWeekDay().map(column => {
+                    const columnDays = column.days.map(date => date.getDate());
 
                     return (
-                        <div className="calendar-column">
-                            {columnValues.map(value => <span>{value}</span>)}
+                        <div 
+                            className={`calendar-column ${column.weekDayIndex < monthFirstDay ? 'down' : ''}`}
+                        >
+                            <span className="calendar-column-header">
+                                {column.name}
+                            </span>
+
+                            <div className="calendar-column-days">
+                                {columnDays.map(value => <span>{value}</span>)}
+                            </div>
                         </div>
-                    ) 
+                    );
                 })}
-            </div> */}
-
-            <div className="calendar-column">
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Seg</td>
-                            <td>Ter</td>
-                            <td>Qua</td>
-                            <td>Qui</td>
-                            <td>Sex</td>
-                            <td>Sab</td>
-                            <td>Dom</td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
-                        </tr>
-                        <tr>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     )
