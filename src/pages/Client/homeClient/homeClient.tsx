@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import MedicalImg from "../../../assets/img/static/homeClientMedical.png"
 import MedicalImgDesktop from "../../../assets/img/static/homeClientMedicalDesktop.png"
 import Body from "../../../assets/img/static/bodyIcon.png"
@@ -12,12 +12,10 @@ import NavBarClient from "../../../components/NavBarClient/NavBarClient"
 import { ProfileContext } from "../../../context/ProfileContext";
 import { useNavigate } from "react-router-dom";
 import { useApi } from "../../../hooks/useApi";
-import { IClientProfile } from "../../../@types/global/client.types";
 import "./styles.css"
 
 function homeClient() {
-    const [clientProfile, setClientProfile] = useState<IClientProfile | null>(null);
-    const { isAuthenticated, user } = useContext(ProfileContext);
+    const { isAuthenticated, user, clientProfile, setClientProfile } = useContext(ProfileContext);
     const navigate = useNavigate();
     const { getClientProfile } = useApi();
 

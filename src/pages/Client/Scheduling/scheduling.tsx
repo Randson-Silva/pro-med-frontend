@@ -1,4 +1,3 @@
-import "./styles.css"
 import SchedulingImg from "../../../assets/img/static/shcedulingImg.png"
 import SchedulingImgDesktop from "../../../assets/img/static/schedulingImgDesktop.png"
 import SchedulingPromotions from "../../../assets/img/static/schedulingPromotios.png"
@@ -8,6 +7,7 @@ import SchedulingFaq from "../../../components/schedulingFaq/schedulingFaq";
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Select } from "@chakra-ui/react";
 import Footer from "../../../components/Footer/Footer";
 import NavBarClient from "../../../components/NavBarClient/NavBarClient";
+import "./styles.css"
 
 function scheduling() {
     return (

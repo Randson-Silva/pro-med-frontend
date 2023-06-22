@@ -1,11 +1,13 @@
 import { IJWT, IUserCredentials, IUserProfile } from '../@types/global/user.types';
 import React, { createContext, useEffect, useState } from 'react';
 import { useApi } from '../hooks/useApi';
+import { IClientProfile } from '../@types/global/client.types';
 
 interface IProfileContext {
    isAuthenticated: boolean, setIsAuthenticated: Function,
    JWT: IJWT | null, setJWT: Function,
    user: IUserProfile | null,
+   clientProfile: IClientProfile | null, setClientProfile: Function,
    handleLogin: (email: string, password: string) => Promise<void>,
    handleLogout: () => void,
 }
@@ -16,6 +18,7 @@ const ProfileContextProvider = ({ children }: { children: React.ReactNode }) => 
    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
    const [JWT, setJWT] = useState<IJWT | null>(null);
    const [user, setUser] = useState<IUserProfile | null>(null);
+   const [clientProfile, setClientProfile] = useState<IClientProfile | null>(null);
 
    const { authenticate } = useApi();
 
@@ -59,6 +62,7 @@ const ProfileContextProvider = ({ children }: { children: React.ReactNode }) => 
             isAuthenticated, setIsAuthenticated,
             JWT, setJWT,
             user,
+            clientProfile, setClientProfile,
             handleLogin,
             handleLogout
          }}>

@@ -210,6 +210,13 @@
     margin-top: 50px;
 }
 
+.client-save-area {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(min-width: 576px) {
     .client-profile-container {
         padding: 0 30px;

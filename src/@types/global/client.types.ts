@@ -16,6 +16,14 @@ export interface IClientProfile {
     houseNumber: number;
   };
   photo: string;
-  medicalHistoric: object;
+  medicalHistoric: {
+    bloodType: string;
+    prescriptionDrugs: string;
+    drugAllergies: string;
+    hospitalizationHistoric: string;
+    surgeriesHistoric: string;
+    priorDiseases: string;
+    extraNotes: string;
+  },
   appointments: [];
 }
